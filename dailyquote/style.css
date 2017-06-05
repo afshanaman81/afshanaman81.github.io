@@ -1,0 +1,71 @@
+body{
+  font-family: sans-serif;
+  background-color: orange;
+}
+
+#card{
+  border-radius: 4px;
+  background-color: white;
+  color: orange;
+  position: fixed;
+  width: 30%;
+  height: 30%;
+  min-width: 500px;
+  min-height: 200px;
+  top: 30%;
+  left:35%;
+}
+
+#outside-text{
+  position: fixed;
+  color: white;
+  width: 4%;
+  height: 5%;
+  min-width: 50px;
+  top: 62%;
+  left:48%;
+}
+
+#quote{
+  padding: 30px 50px;
+  font-size: 22px;
+  font-type: bold;
+}
+
+#buttons{
+  position: fixed;
+  width: 30%;
+  height: 7%;
+  min-width: 500px;
+  top: 53%;
+  left:35%;
+}
+.button {
+  border:none;
+  border-radius:3px;
+  color:white;
+  background-color:orange;
+  outline:none;
+  height: 35px;  
+  font-size:16px;
+  margin-top: 10px;
+  padding: 10px;
+}
+#tweet{
+  margin-left:50px;
+}
+
+#new-quote{
+  margin-left:280px;   
+  opacity:1;
+  cursor:pointer;
+}
+
+ .quote-author {
+    width:400px;
+    height:auto;
+    clear:both;
+    padding-top:10px;
+    font-size:16px; 
+    text-align:right;
+  }

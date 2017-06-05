@@ -1,0 +1,200 @@
+.dash-body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.feed{
+    position: fixed;
+    top: 8%;
+    left: 75%;
+
+    width: 24.5%;
+    height: 87%;
+    max-width: 40%;
+    max-height: 90%;
+    min-width: 15%;
+    min-height: 400px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 3px;
+    border: 1.5px solid #66489B;
+}
+
+.leaderboard{
+    position: fixed;
+    top: 8%;
+    left: 1%;
+
+    width: 73%;
+    height: 40%;
+    max-width: 80%;
+    max-height: 80%;
+    min-width: 15%;
+    min-height: 200px;
+
+    overflow: hidden;
+    background-color: white;
+    border-radius: 3px;
+    border: 1.5px solid #66489B;
+}
+
+.trends{
+    position: fixed;
+    top: 50%;
+    left: 1%;
+
+    width: 73%;
+    height: 45%;
+    max-width: 95%;
+    max-height: 60%;
+    min-width: 15%;
+    min-height: 200px;
+
+    overflow: hidden;
+    background-color: white;
+    border-radius: 3px;
+    border: 1.5px solid #66489B;
+}
+
+.title-bar{
+    position: relative;
+    height:30px;
+    width:100%;
+    background-color: #66489B;
+    text-align:right;
+    padding-top: 5px;
+    padding-right:8px;
+}
+
+.box{
+    height:100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.feed-box{
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.chart-canvas{
+    padding: 50px;
+}
+
+.title{
+    float:left;
+    margin-left: 10px;
+    width:30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.status-bar{
+    position: fixed;
+    top:97%;
+    height:3%;
+    width:100%;
+    background-color:palevioletred;
+}
+
+.small-size{
+    position:fixed;
+    width:15%;
+    height:30px;
+    max-height: 30px;
+    min-height:30px;
+    top:97%;
+}
+
+.minimized-trend{
+    position:fixed;
+    left:1%;
+}
+.minimized-lb{
+    position:fixed;
+    left: 17%;
+}
+.minimized-feed{
+    position:fixed;
+    left:33%;
+}
+.tb-padding{
+    padding-right: 15px;
+}
+
+.minimize, .restore{
+    color: white;
+}
+
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    .small-size{
+        min-width: 200px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .small-size{
+        min-width: 105px;
+    }
+    .title{
+        font-size: 12px;
+    }
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .small-size{
+        width: 100px;
+    }
+    .title{
+        font-size: 9px;
+        margin-left: 0;
+    }
+    .minimized-trend{
+        left:2px;
+    }
+
+    .minimized-lb{
+        left: 105px;
+    }
+    .minimized-feed{
+        left: 208px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .small-size{
+        min-width: 50px;
+    }
+
+}
+
+
+
+
+
+/*for the resizable part (part of the jquery css)*/
+.ui-icon { width: 16px; height: 16px; background-image: url(http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/images/ui-icons_222222_256x240.png)/*{iconsContent}*/; }
+.ui-resizable { position: fixed;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0px; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0px; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0px; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0px; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
