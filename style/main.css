@@ -1,0 +1,193 @@
+.body-div{
+  background-color:grey;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  overflow-y: hidden;
+}
+
+#top-nav{
+  position:fixed;
+  width: 100%;
+  height:6%;
+  background: #7a3d96;
+  padding:20px;
+  text-align:right;
+}
+
+#middle{
+  position:fixed;
+  top: 6.5%;
+  left: 20%;
+  height:68%;
+  width:60%;
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+#bottom{
+  position:fixed;
+  bottom: 8%;
+  height:17%;
+  width:100%;
+  color:white;
+}
+
+#footer{
+  position:fixed;
+  bottom: 0px;
+  height: 8%;
+  width:100%;
+  background: #7a3d96;
+  color:white;
+  font-size:18px;
+  padding:30px;
+}
+
+#contact-msg{
+  padding-top:50px;
+  text-align:justify;
+  font-size:14px;
+}
+
+#intro-msg{
+  padding:100px 50px 50px 50px;
+  font-size:18px;
+  color: white;
+}
+
+#form{
+  font-size:14px;
+  padding-bottom:20px;
+}
+
+.project-cards{
+  width: 1000px;
+  min-height: 400px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.project-cards .project-card{
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  float: left;
+  margin-bottom: 30px;
+  margin-left: 60px;
+}
+.project-img{
+  height: 300px;
+}
+
+.project-name{
+  height: 100px;
+  padding-top: 40px;
+  font-weight: bold;
+}
+
+.light-grey{
+  background-color:#a4adae;
+}
+
+.round-img{
+  padding:30px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.wide{
+   width:100%;
+}
+.float-right{
+  float:right;
+}
+
+.nav-item{
+  color:white;
+  font-size:18px;
+  padding:20px;
+}
+
+.social-media{
+  font-size:40px;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar{
+  width: 5px;  /* for vertical scrollbars */
+  height: 5px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgba(0, 0, 0, 0.5);
+}
+/* End of Scrollbar*/
+
+
+/* Disclaimer: following is Not my own code.
+Stolen from the original https://codepen.io/freeCodeCamp/full/YqLyXB */
+#portfolio .grid,
+#contact>div{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-flow:row wrap;
+      flex-flow:row wrap;
+  -ms-flex-pack:distribute;
+      justify-content:space-around;
+  -webkit-box-align:start;
+      -ms-flex-align:start;
+          align-items:flex-start;
+  margin:0 auto;
+}
+main section{background:#eee;padding:40px 0;
+}
+main section#contact>div{margin:0px auto;
+}
+main section#contact>div>div{width:80%;
+}
+main section#contact>div>div p{margin:60px auto 0;max-width:700px;
+}
+@media(min-width:1023px){
+  main section#contact>div>div{max-width:38%;
+  }
+  main section#contact>div>div p{margin-top:35px;
+  }
+  main section#contact>div>div p:last-child{margin-top:270px;
+  }
+}
+#portfolio .grid{padding:0;max-width:90%;list-style:none;margin-top:20px;
+}
+#portfolio .grid li{margin:20px;max-width:600px;
+}
+@media(min-width:1023px){
+  #portfolio .grid li{max-width:420px;
+  }
+}
+#portfolio img{max-width:100%;height:auto;display:block;
+}
+form{
+  width:80%;
+}
+form .row:first-child .form-item{border-top:1px solid #fff;
+}
+.form-item{position:relative;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #bbb;
+}
+.form-item input, .form-item textarea{z-index:1;position:relative;padding-right:0;padding-left:0;border:0;border-radius:0;font-size:12px;background:0 0;box-shadow:none!important;resize:none;width:100%;
+}
+.form-item input:focus, .form-item textarea:focus{outline:0
+}
+.form-item label{display:block;z-index:0;position:relative;top:2em;margin:0;font-size:12px;line-height:1.764705882em;vertical-align:middle;vertical-align:baseline;opacity:0;-webkit-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease;
+}
+.form-item-filled label{top:0;opacity:1;color:#aaa;
+}
+.form-item-focused label{color:#722872;
+}
