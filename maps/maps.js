@@ -46,6 +46,7 @@ $(function(){
             projection: proj
         });
 
+        var coordinates = [];
         var lat = 54;
         var lng = 24;
         var files = evt.target.files; // FileList object
@@ -59,7 +60,7 @@ $(function(){
             var reader = new FileReader();
             reader.readAsBinaryString(f);    // Read in the image file as a data URL.
 
-            (function() {
+            (function() {   // since the getData function takes longer than the loop execution, we need a callback
 
                 var tmppath =(window.URL || window.webkitURL).createObjectURL(f);
                 EXIF.getData(f, function () {
@@ -68,6 +69,9 @@ $(function(){
                     if (allMetaData.GPSLatitude) {
                         lat = ConvertDMSToDD(allMetaData.GPSLatitude[0], allMetaData.GPSLatitude[1], allMetaData.GPSLatitude[2], allMetaData.GPSLatitudeRef);
                         lng = ConvertDMSToDD(allMetaData.GPSLongitude[0], allMetaData.GPSLongitude[1], allMetaData.GPSLongitude[2], allMetaData.GPSLongitudeRef);
+
+                        coordinates.push([lat, lng]);
+
                     }
 
                     var point = new ol.geom.Point(ol.proj.transform([lng, lat], 'EPSG:4326', 'EPSG:3857'));
@@ -110,12 +114,14 @@ $(function(){
                     popupsOverlay.setPosition(coordinate);
                     map.addOverlay(popupsOverlay)
                 });
-
             }(f));
         }
 
+        console.log(coordinates)
+        var ext = ol.extent.boundingExtent([coordinates]);
         vectorLayer.setSource(vectorSource);
         map.addLayer(vectorLayer)
+        //map.getView().fit(ext,map.getSize());
 
         /**
          * Add a click handler to the map to render the general popup.
@@ -155,3 +161,10 @@ $(function(){
 });
 
 
+// TODO:
+/*
+1. Zoom to extent
+2. Image rotation
+3. Passing coordinates array for zoom to extent
+4.
+*/
