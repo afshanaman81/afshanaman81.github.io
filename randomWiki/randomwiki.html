@@ -1,0 +1,191 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Random Wikipedia Entry</title>
+
+    <style>
+        body{
+            background-color: seagreen;
+        }
+        .wiki{
+            position: relative;
+            left: 35%;
+            top: 35%;
+            width: 30%;
+            height: 20%;
+            color: white;
+            text-align: center;
+            font-family:courier;
+        }
+        .wiki-top{
+            position: relative;
+            left: 35%;
+            top: 3%;
+            width: 30%;
+            height: 20%;
+            color: white;
+            text-align: center;
+            font-family:courier;
+        }
+        #wiki-results{
+            position: relative;
+            left: 5%;
+            top: 2%;
+            width: 90%;
+            color: white;
+            text-align: left;
+        }
+        .wiki-result{
+            margin-left: 10px;
+        }
+        .wiki-title{
+            color: black;
+            /*margin: 1px 0px;
+            border-bottom: 1px solid black;*/
+        }
+        .wiki-footer{
+            width: 400px;
+            font-style: italic;
+            font-size:smaller;
+        }
+
+        #wiki-a{
+            color: white;
+            text-decoration: none;
+        }
+
+        #search-box{
+            margin-top: 20px;
+            text-align: center;
+        }
+        #search-btn{
+            font-size:50px;
+        }
+        #search-text{
+            position: relative;
+            height: 35px;
+            width: 100%;
+            left: 25%;
+        }
+        input[type=search] {
+            color: red;
+            background-color: transparent;
+            text-align: left;
+            cursor: pointer;
+            width: 50%;
+            height: 35px;
+            float: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            letter-spacing: 4px;
+            word-spacing: 20px;
+            border: solid darkblue;
+            border-radius: 30px;
+
+
+        }
+        #search-msg{
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wiki-search" class="wiki">
+        <div id="wiki-body"><a id="wiki-a" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random article</a></div>
+        <div id="search-box">
+            <i id="search-btn" class="fa fa-search"></i>
+            <div id="search-text">
+                <input id="type-search" type="search" placeholder="Search here..." hidden>
+            </div>
+        </div>
+        <div id="search-msg">(Click <i class="fa fa-search"></i> to search for a specific topic)</div>
+    </div>
+
+    <div id="wiki-results" hidden></div>
+</body>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+    $(function(){
+        $("#search-btn").on("click", function(){
+            // hide the search button
+            $(this).hide();
+            // show the search-text
+            $("#type-search").show({ effect: "scale"});
+            $("#type-search").focus();
+
+        })
+
+        // wiki search
+        // https://www.mediawiki.org/wiki/API:Main_page
+        //https://www.w3schools.com/jquery/ajax_get.asp
+
+        $("#type-search").keypress(function(e){
+            var key = e.which;
+            if (key == 13){
+                const searchTxt = $("#type-search").val();
+	            const N  = 10;
+                const url = "https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrnamespace=0" +
+                            "&gsrlimit=" + N + "&prop=info|extracts&inprop=url&format=json&gsrsearch=" + searchTxt+
+                            "&exlimit=max&exintro&continue&exchars=1000&callback=?"
+                $.getJSON(url,processResult);
+
+                function processResult(data){
+                    var pages= data.query.pages;
+
+                    $.each(pages, function(i, item){
+                        // move the search area to the top
+                        $('#wiki-search').removeClass('wiki')
+                        $('#wiki-search').addClass('wiki-top')
+                        $('#search-msg').html(N + " Results returned for your search term '" + searchTxt + "'")
+
+                        // display results
+                        $('#wiki-results').show()
+
+                        // create new div for each result
+                        const excerpt =  item.extract.split("</p>")[0]
+                        const wikiResult = document.createElement("div")
+                        const title = document.createElement("div")
+                        const extract = document.createElement("div")
+                        const footer = document.createElement("div")
+                        const fullURL = document.createElement("div")
+                        const lastEdited = document.createElement("div")
+                        const hr = document.createElement("hr")
+
+                        wikiResult.appendChild(title)
+                        wikiResult.appendChild(extract)
+                        wikiResult.appendChild(footer)
+                        wikiResult.appendChild(footer)
+
+                        footer.appendChild(fullURL)
+                        footer.appendChild(lastEdited)
+	                    footer.appendChild(hr)
+
+                        // give css style
+                        title.className = "wiki-title"
+                        footer.className= "wiki-footer"
+	                    extract.className = "wiki-result"
+
+                        // populate with data
+                        title.innerHTML     ="<h3>" + item.title + "</h3>"
+                        extract.innerHTML   =excerpt + "</p>"
+                        fullURL.innerHTML   ="URL: <a href='" + item.fullurl + "'>" + item.fullurl + "</a>"
+                        lastEdited.innerHTML="Last Edited: " + item.touched
+
+                        // add to dom
+                        $('#wiki-results').append(wikiResult)
+
+
+                    })
+                }
+            }
+        });
+
+
+    });
+
+
+</script>
+</html>

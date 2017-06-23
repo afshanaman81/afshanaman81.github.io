@@ -1,9 +1,15 @@
 .map {
-    height: 95%;
-    width: 100%;
+    position: fixed;
+    height: 99%;
+    width: 99%;
+    left: 6px;
+    top: 4px;
+    /*border: solid;
+    border-radius: 5px;*/
 }
 
 #map:focus {
+
     outline: #4A74A8 solid 0.15em;
 }
 
@@ -22,12 +28,32 @@
     min-height: 100px;
 }
 
+.img-content{
+    position: relative;
+    top: 5px;
+    width: 70px;
+}
 .popup-closer {
     text-decoration: none;
     position: absolute;
-    top: 2px;
-    right: 8px;
+    top: 1px;
+    right: 5px;
 }
 .popup-closer:after {
     content: "x";
+}
+
+
+.center{
+    position: fixed;
+    width: 40%;
+    padding: 70px 0;
+    top: 35%;
+    left: 30%;
+    text-align: center;
+    /*border:solid;*/
+}
+
+.centered{
+    margin:auto;
 }

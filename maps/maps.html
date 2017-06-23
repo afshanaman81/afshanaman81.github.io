@@ -25,10 +25,20 @@
     <div id="top-nav"></div>
     <div id="side-nav"></div>
     <div id="image"></div>
-    <div id="map" class="map" tabindex="0"></div>
+    <div id="map" class="map" tabindex="0" hidden></div>
 
-    <p>Choose a few photos from your computer and they will appear on the map if they have a geo-location meta tag</p>
-    <input type="file" id="files" name="files[]" multiple />
+    <div class="center">
+        <p>Choose a few photos from your computer and
+            they will appear on the map
+            if they have a geo-location meta tag. </p>
+        <p>
+            <i>Disclaimer: Your photos never leave your computer. Its a client-side only script.</i>
+        </p>
+        <br><br>
+        <input class="centered" type="file" id="files" name="files[]" multiple />
+    </div>
+
+
     <script src="maps.js"></script>
 </body>
 </html>

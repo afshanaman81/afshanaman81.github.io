@@ -5,9 +5,16 @@
 //https://openlayers.org/en/latest/examples/icon.html
 //http://www.wikihow.com/Add-Vector-Features-to-an-OpenLayers-3-Map
 $(function(){
+    var coordinates = [];
+    var imgcontainer, imgcontent, imgclose;
     var popupsOverlay;
     $("#files").on("change", handleFileSelect);
     function handleFileSelect(evt) {
+        // hide the div 'center'
+	    $(".center").hide()
+        $(".center").children().hide()
+        $("#map").show()
+
         var basemap = new ol.layer.Tile({
             source: new ol.source.OSM()
         });
@@ -46,10 +53,10 @@ $(function(){
             projection: proj
         });
 
-        var coordinates = [];
+
         var lat = 54;
         var lng = 24;
-        var files = evt.target.files; // FileList object
+        const files = evt.target.files; // FileList object
         // Loop through the FileList and render image files as thumbnails.
         for (var i = 0, f; f = files[i]; i++) {
             // Only process image files.
@@ -62,20 +69,18 @@ $(function(){
 
             (function() {   // since the getData function takes longer than the loop execution, we need a callback
 
-                var tmppath =(window.URL || window.webkitURL).createObjectURL(f);
+                const tmppath =(window.URL || window.webkitURL).createObjectURL(f);
                 EXIF.getData(f, function () {
-                    var allMetaData = EXIF.getAllTags(this);
+                    const allMetaData = EXIF.getAllTags(this);
                     // get the geolocation from the file (if available)
                     if (allMetaData.GPSLatitude) {
                         lat = ConvertDMSToDD(allMetaData.GPSLatitude[0], allMetaData.GPSLatitude[1], allMetaData.GPSLatitude[2], allMetaData.GPSLatitudeRef);
                         lng = ConvertDMSToDD(allMetaData.GPSLongitude[0], allMetaData.GPSLongitude[1], allMetaData.GPSLongitude[2], allMetaData.GPSLongitudeRef);
-
-                        coordinates.push([lat, lng]);
-
+                        var callback = $.proxy(pushCoords,lat, lng);
                     }
 
-                    var point = new ol.geom.Point(ol.proj.transform([lng, lat], 'EPSG:4326', 'EPSG:3857'));
-                    var iconFeature = new ol.Feature({
+                    const point = new ol.geom.Point(ol.proj.transform([lng, lat], 'EPSG:4326', 'EPSG:3857'));
+                    const iconFeature = new ol.Feature({
                         geometry: point,
                         name: 'Feature 1',
                         population: 4000,
@@ -85,17 +90,29 @@ $(function(){
                     iconFeature.setStyle(iconStyle);
                     vectorSource.addFeature(iconFeature);
 
-                    var geometry = iconFeature.getGeometry();
-                    var coordinate = geometry.getCoordinates();
+                    const geometry = iconFeature.getGeometry();
+                    const coordinate = geometry.getCoordinates();
                     //var position = map.getPixelFromCoordinate(coordinate);
 
                     // show image in popup window
                     imgcontainer = document.createElement("div")
                     imgcontainer.setAttribute("class","img-popup")
+
                     imgcontent = document.createElement("img")
-                    imgcontainer.appendChild(imgcontent)
+                    imgcontent.setAttribute("class","img-content")
                     imgcontent.setAttribute('src', tmppath)
-                    imgcontent.setAttribute('width', '70')
+
+                    imgclose = document.createElement("div")
+                    imgclose.setAttribute("class","popup-closer")
+
+                    imgcontainer.appendChild(imgcontent)
+                    imgcontainer.appendChild(imgclose)
+
+                    imgclose.onclick = function() {
+                        console.log("CLOSING")
+                        $(imgcontainer).hide();
+                        return false;
+                    }
 
                     imgcontainer.onclick = function() {
                         console.log("CLOSING")
@@ -115,38 +132,24 @@ $(function(){
                     map.addOverlay(popupsOverlay)
                 });
             }(f));
+
         }
 
-        console.log(coordinates)
-        var ext = ol.extent.boundingExtent([coordinates]);
+
         vectorLayer.setSource(vectorSource);
         map.addLayer(vectorLayer)
+
+        console.log(coordinates)
+        //var ext = ol.extent.boundingExtent([coordinates]);
         //map.getView().fit(ext,map.getSize());
 
-        /**
-         * Add a click handler to the map to render the general popup.
-         */
-        //https://dev.camptocamp.com/files/gberaudo/webgl_polygons_lines/examples/popup.html
-        //https://openlayers.org/en/latest/examples/overlay.html
-       /* map.on('click', function(evt) {
-            var coordinate = evt.coordinate;
-            content.innerHTML = '<p>You clicked here:</p><code>' + coordinate + '</code>';
-            popupsOverlay.setPosition(coordinate);
-        });*/
-
-        /**
-         * Add a click handler to hide the general popup.
-         * @return {boolean}
-         */
-        /*closer.onclick = function() {
-            console.log("CLOSING")
-            popupsOverlay.setPosition(undefined);
-            closer.blur();
-            return false;
-        }*/
     }
 
-
+    // doesnt work :(
+    function pushCoords(lat, lng){
+        console.log("lat: " + lat)
+        coordinates.push([lat, lng])
+    }
 
 
     function ConvertDMSToDD(degrees, minutes, seconds, direction) {
@@ -166,5 +169,5 @@ $(function(){
 1. Zoom to extent
 2. Image rotation
 3. Passing coordinates array for zoom to extent
-4.
+4. Hide the file selector division
 */
