@@ -1,0 +1,83 @@
+body{
+    background-color: seagreen;
+}
+.wiki{
+    position: relative;
+    left: 35%;
+    top: 35%;
+    width: 30%;
+    height: 20%;
+    color: white;
+    text-align: center;
+    font-family:courier;
+}
+.wiki-top{
+    position: relative;
+    left: 35%;
+    top: 3%;
+    width: 30%;
+    height: 20%;
+    color: white;
+    text-align: center;
+    font-family:courier;
+}
+#wiki-results{
+    position: relative;
+    left: 5%;
+    top: 2%;
+    width: 90%;
+    color: white;
+    text-align: left;
+}
+.wiki-result{
+    margin-left: 10px;
+}
+.wiki-title{
+    color: black;
+    /*margin: 1px 0px;
+    border-bottom: 1px solid black;*/
+}
+.wiki-footer{
+    width: 400px;
+    font-style: italic;
+    font-size:smaller;
+}
+
+#wiki-a{
+    color: white;
+    text-decoration: none;
+}
+
+#search-box{
+    margin-top: 20px;
+    text-align: center;
+}
+#search-btn{
+    font-size:50px;
+}
+#search-text{
+    position: relative;
+    height: 35px;
+    width: 100%;
+    left: 25%;
+}
+input[type=search] {
+    color: red;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+    width: 50%;
+    height: 35px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 4px;
+    word-spacing: 20px;
+    border: solid darkblue;
+    border-radius: 30px;
+
+
+}
+#search-msg{
+    margin-top: 30px;
+}
