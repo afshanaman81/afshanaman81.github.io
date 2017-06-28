@@ -1,0 +1,76 @@
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="painting.css">
+</head>
+
+<body>
+    <div id="favicon"><img src="img/favicon.png" class="favicon"></div>
+
+    <canvas class="dims canvas" id="canvas" width="500" height="500"></canvas>
+
+    <div class="dims outer">
+        <div class="color-options icons" title="color">
+           <!-- https://ruhley.github.io/angular-color-picker/-->
+            <img src="img/dot-red.png" width="30" title="red">
+            <img src="img/dot-blue.png" width="30" title="blue">
+            <img src="img/dot-green.png" width="30" title="green">
+        </div>
+
+        <div class="tools icons">
+            <div class="icons"><img src="img/pencil.png" class="image" title="pencil"></div>
+            <div class="icons"><img src="img/brush.png" class="image"  title="brush"></div>
+            <div class="icons"><img src="img/fill.png"  class="image"  title="fill"></div>
+            <div class="icons"><img src="img/spray.png" class="image"  title="spray"></div>
+            <div class="icons"><img src="img/hightlighter.png" class="image" title="highlighter"></div>
+        </div>
+
+        <div class="thickness-options">
+            <div class="icons"><img src="img/dot.png" width="10" title="thin"></div>
+            <div class="icons"><img src="img/dot.png" width="20" title="medium"></div>
+            <div class="icons"><img src="img/dot.png" width="30" title="thick"></div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+	function loadImages(sources, callback) {
+		var images = {};
+		var loadedImages = 0;
+		var numImages = 0;
+		// get num of sources
+		for(var src in sources) {
+			numImages++;
+		}
+		for(var src in sources) {
+			images[src] = new Image();
+			images[src].onload = function() {
+				if(++loadedImages >= numImages) {
+					callback(images);
+				}
+			};
+			images[src].src = sources[src];
+		}
+	}
+	var canvas = document.getElementById('canvas');
+	var context = canvas.getContext('2d');
+	var randomNumber = Math.floor((Math.random() * 10) + 1);
+	var sources = {
+		src: "img/" + randomNumber + ".png"
+	};
+
+	loadImages(sources, function(images) {
+		var image = images.src
+		context.drawImage(image,canvas.width / 2 - image.width / 2,
+			canvas.height / 2 - image.height / 2);
+	});
+
+</script>
+</html>
