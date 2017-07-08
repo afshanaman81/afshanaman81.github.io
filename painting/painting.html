@@ -13,14 +13,14 @@
 <body>
     <div id="favicon"><img src="img/favicon.png" class="favicon"></div>
 
-    <canvas class="dims canvas" id="canvas" width="500" height="500"></canvas>
+    <canvas class="canvas" id="canvas" width="800" height="700"></canvas>
 
     <div class="dims outer">
         <div class="color-options icons" title="color">
            <!-- https://ruhley.github.io/angular-color-picker/-->
-            <img src="img/dot-red.png" width="30" title="red">
-            <img src="img/dot-blue.png" width="30" title="blue">
-            <img src="img/dot-green.png" width="30" title="green">
+            <img src="img/dot-red.png" width="30" title="red" onclick="setColor('red')">
+            <img src="img/dot-blue.png" width="30" title="blue" onclick="setColor('blue')">
+            <img src="img/dot-green.png" width="30" title="green" onclick="setColor('green')">
         </div>
 
         <div class="tools icons">
@@ -32,52 +32,22 @@
         </div>
 
         <div class="thickness-options">
-            <div class="icons"><img src="img/dot.png" width="10" title="thin"></div>
-            <div class="icons"><img src="img/dot.png" width="20" title="medium"></div>
-            <div class="icons"><img src="img/dot.png" width="30" title="thick"></div>
+            <div class="icons"><img src="img/dot.png" width="10" title="thin" onclick="setThickness(1)"></div>
+            <div class="icons"><img src="img/dot.png" width="20" title="medium" onclick="setThickness(2)"></div>
+            <div class="icons"><img src="img/dot.png" width="30" title="thick" onclick="setThickness(3)"></div>
 
         </div>
     </div>
 </body>
 
-/*
+
+<!--
 Plain javascript: http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-colors
+Using Reactjs   : https://react.rocks/example/react-sketchpad
 Using  AngularJs: http://angularscript.com/touch-enabled-canvas-painter-angularjs/
                   http://pwambach.github.io/angular-canvas-painter/
 Using  Angular2+: https://medium.com/@tarik.nzl/creating-a-canvas-component-with-free-hand-drawing-with-rxjs-and-angular-61279f577415
-
-*/
-<script>
-	function loadImages(sources, callback) {
-		var images = {};
-		var loadedImages = 0;
-		var numImages = 0;
-		// get num of sources
-		for(var src in sources) {
-			numImages++;
-		}
-		for(var src in sources) {
-			images[src] = new Image();
-			images[src].onload = function() {
-				if(++loadedImages >= numImages) {
-					callback(images);
-				}
-			};
-			images[src].src = sources[src];
-		}
-	}
-	var canvas = document.getElementById('canvas');
-	var context = canvas.getContext('2d');
-	var randomNumber = Math.floor((Math.random() * 10) + 1);
-	var sources = {
-		src: "img/" + randomNumber + ".png"
-	};
-
-	loadImages(sources, function(images) {
-		var image = images.src
-		context.drawImage(image,canvas.width / 2 - image.width / 2,
-			canvas.height / 2 - image.height / 2);
-	});
-
-</script>
+-->
+<script src="load_image.js"></script>
+<script src="draw.js"></script>
 </html>

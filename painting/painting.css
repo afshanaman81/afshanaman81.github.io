@@ -1,13 +1,11 @@
 .dims{
-    max-width:800px;
-    min-width:500px;
-    width: 50%;
+    width:800px;
     left: 25%;
 }
 .canvas{
     position: fixed;
     top: 2%;
-    height: 75%;
+    left: 25%;
     border: 1px orangered dashed;
 }
 
@@ -15,7 +13,7 @@
     position: fixed;
     border: 1px red dashed;
     text-align: center;
-    top: 81%;
+    top: 750px;
 }
     .tools{
         text-align: center;
