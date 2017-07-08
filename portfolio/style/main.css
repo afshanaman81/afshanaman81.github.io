@@ -88,7 +88,11 @@
   padding-top: 40px;
   font-weight: bold;
 }
-
+.centered{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 .light-grey{
   background-color:#a4adae;
 }

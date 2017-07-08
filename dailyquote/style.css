@@ -61,11 +61,11 @@ body{
   cursor:pointer;
 }
 
- .quote-author {
-    width:400px;
-    height:auto;
-    clear:both;
-    padding-top:10px;
-    font-size:16px; 
-    text-align:right;
-  }
+.quote-author {
+  width:400px;
+  height:auto;
+  clear:both;
+  padding-top:10px;
+  font-size:16px;
+  text-align:right;
+}
