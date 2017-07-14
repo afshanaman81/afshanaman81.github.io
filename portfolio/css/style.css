@@ -232,7 +232,6 @@ ul.work-images li {
 	list-style:none;
 	display:inline-block;
 	margin: 8px 10px;
- background:
 }
 ul.work-images li:first-child {
 	margin-left:0;
@@ -276,4 +275,10 @@ ul.work-images li img:hover {
 }
 .footer p a:hover {
 	color:#39d084;
+}
+
+.rounded{
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
 }
