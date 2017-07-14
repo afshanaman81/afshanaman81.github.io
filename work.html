@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Portfolio</title>
+<title>Mini Portfolio | Work</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="portfolio/css/bootstrap.css" rel="stylesheet">
 <link href="portfolio/css/style.css" rel="stylesheet">
 <link href="portfolio/font/css/fontello.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen">
 </head>
 <body>
 <div class="navbar">
@@ -16,27 +17,42 @@
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span> </a>
-      <a class="brand" href="index.html">
-        <img src="portfolio/img/user.jpg" alt="">
-      </a>
+        <span class="icon-bar"></span>
+      </a> <a class="brand" href="index.html"><img src="portfolio/img/user.jpg" alt=""></a>
       <ul class="nav nav-collapse pull-right">
-        <li><a href="index.html" class="active"><i class="icon-user"></i> Profile</a></li>
-        <li><a href="skills.html"><i class="icon-trophy"></i>             Skills</a></li>
-        <li><a href="work.html"><i class="icon-picture"></i>              Work</a></li>
-        <li><a href="resume.html"><i class="icon-doc-text"></i>           Resume</a></li>
+        <li><a href="index.html"><i class="icon-user"></i> Profile</a></li>
+        <li><a href="skills.html"><i class="icon-trophy"></i> Skills</a></li>
+        <li><a href="work.html" class="active"><i class="icon-picture"></i> Work</a></li>
+        <li><a href="resume.html"><i class="icon-doc-text"></i> Resume</a></li>
       </ul>
       <div class="nav-collapse collapse"></div>
     </div>
   </div>
 </div>
-<div class="container profile">
-  <div class="span3"> <img src="portfolio/img/mini.png" alt=""> </div>
-  <div class="span5">
-    <h1>Juan Dela Cruz</h1>
-    <h3>Web &amp; Graphics Designer</h3>
-    <p> Hello I am Juan Dela Cruz Web and Graphics Designer from Philipines. If yopu have something to be done just call my name and I will be there. :-) </p>
-    <a href="#" class="hire-me"><i class="icon-paper-plane"></i> Hire Me </a> </div>
+<div class="container work">
+  <h2>My Work</h2>
+  <ul class="work-images">
+    <li>
+      <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/1.jpg" title="Image 01"><img src="img/1-thumb.jpg" alt=""></a></div>
+    </li>
+    <li>
+      <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/2.jpg"><img src="img/2-thumb.jpg" alt=""></a></div>
+    </li>
+    <li>
+      <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/3.jpg"><img src="img/3-thumb.jpg" alt=""></a></div>
+    </li>
+  </ul>
+  <ul class="work-images">
+    <li>
+      <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/4.jpg"><img src="img/4-thumb.jpg" alt=""></a></div>
+    </li>
+    <li>
+      <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/5.jpg"><img src="img/5-thumb.jpg" alt=""></a></div>
+    </li>
+    <li>
+      <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/6.jpg"><img src="img/6-thumb.jpg" alt=""></a></div>
+    </li>
+  </ul>
 </div>
 <div class="row social">
   <ul class="social-icons">
@@ -48,7 +64,7 @@
     <li><a href="#"><img src="portfolio/img/socialMedia/cp.png" title="CodePen, a little"></a></li>
   </ul>
 </div>
-<div class="footer" href="portfolio/style/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<div class="footer">
   <div class="container">
     <p class="pull-left"><a href="http://dzyngiri.com">www.dzyngiri.com</a></p>
     <p class="pull-right"><a href="#myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> CONTACT</a></p>
@@ -70,10 +86,27 @@
     </form>
   </div>
 </div>
-<script src="portfolio/js/jquery-1.10.1.min.js"></script>
-<script src="portfolio/js/bootstrap.min.js"></script>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
 $('#myModal').modal('hidden')
+</script>
+<script src="js/jquery.fancybox.js?v=2.1.5"></script>
+<script>
+$(document).ready(function () {
+    $(".fancybox-thumb").fancybox({
+        helpers: {
+            title: {
+                type: 'inside'
+            },
+            overlay: {
+                css: {
+                    'background': 'rgba(1,1,1,0.65)'
+                }
+            }
+        }
+    });
+});
 </script>
 </body>
 </html>

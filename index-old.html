@@ -1,0 +1,151 @@
+<html>
+<head>
+
+
+  <link rel="stylesheet" href="portfolio/style/main.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="body-div">
+<div id="top-nav">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+	<a rel="nofollow" rel="noreferrer"class="scrollable" href="#about"><span class="nav-item">About</span></a>
+	<a rel="nofollow" rel="noreferrer"class="scrollable" href="#portfolio"><span class="nav-item">Portfolio</span></a>
+	<a rel="nofollow" rel="noreferrer"class="scrollable" href="#contact"><span class="nav-item">Contact</span></a>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+
+
+<div id="middle">
+  <div id="about" class="row light-grey">
+	<div id="intro-msg" class="col-md-6">
+	  Researcher, Data Analyst, Android and Full-stack Web Developer;
+	  apprentice data scientist and wood-worker.
+	</div>
+	<div id="into-img" class="col-md-6">
+	  <img class="round-img" src="https://bit.ly/fcc-running-cats"></img>
+	</div>
+  </div> <!-- / about-->
+
+  <!-- Gallery Grid Section-->
+  <div id="portfolio-div">
+	<section id="portfolio">
+	  <h2>Portfolio</h2>
+	  <hr class="star-dark"/>
+
+	  <!-- Grid : https://stackoverflow.com/questions/21014209/how-do-i-make-a-grid-with-html-and-css-with-divs -->
+	  <div class="project-cards">
+		<div id="project1" class="project-card">
+		  <div class="project-img">
+			<a href="localweather/weather.html" target="_blank"><img src="portfolio/img/local-weather.png" alt=""/></a>
+		  </div>
+		  <div class="project-name">Local Weather</div>
+		</div>
+
+		<div id="project2" class="project-card">
+		  <div class="project-img">
+			<a href="dailyquote/daily-quote.html" target="_blank"><img src="portfolio/img/daily-quotes.png" alt=""/></a>
+		  </div>
+		  <div class="project-name">Daily Random Quote</div>
+		</div>
+
+		<div id="project3" class="project-card">
+		  <div class="project-img">
+			<a href="dashboard/dashboard.html" target="_blank"><img src="portfolio/img/dashboard.png" alt=""/></a>
+		  </div>
+		  <div class="project-name">Dashboard</div>
+		</div>
+
+		<div id="project4" class="project-card">
+		  <div class="project-img">
+			<a href="maps/maps.html" target="_blank"><img src="portfolio/img/roadmap.png" alt=""/></a>
+		  </div>
+		  <div class="project-name">Map My Pictures</div>
+		</div>
+
+		<div id="project5" class="project-card">
+		  <div class="project-img">
+			  <a href="randomwiki/randomwiki.html" target="_blank"><img src="portfolio/img/random-wiki.png" alt=""/></a>
+		  </div>
+		  <div class="project-name">Random Wiki</div>
+		</div>
+
+		<div id="project6" class="project-card">
+		  <div class="project-img">
+			  <a href="painting/painting.html" target="_blank"><img class="centered" src="portfolio/img/favicon.png" alt=""/></a>
+		  </div>
+		  <div class="project-name">Painting</div>
+		</div>
+
+
+
+	  </div>
+	</section>
+  </div><!-- /Gallery Grid Section (portfolio-div) -->
+
+  <div id="contact-div">
+	<section id="contact">
+	  <h2>Contact Me</h2>
+	  <hr class="star-dark"/>
+	  <div class="row">
+		<div class="col-md-6">
+		  <div id="form">
+			<form id="contactForm" novalidate="">
+			  <div class="form-item">
+				<label for="name">Name</label>
+				<input id="name" type="text" placeholder="Name" required=""/>
+			  </div>
+			  <div class="form-item">
+				<label for="email">Email Address</label>
+				<input id="email" type="email" placeholder="Email Address" required=""/>
+			  </div>
+			  <div class="form-item">
+				<label for="phone">Phone Number</label>
+				<input id="phone" type="tel" placeholder="Phone Number" required=""/>
+			  </div>
+			  <div class="form-item">
+				<label for="message">Message</label>
+				<textarea id="message" rows="5" placeholder="Message" required=""></textarea>
+			  </div><br/>
+			  <button type="submit">Send</button>
+			</form>
+		  </div>
+		</div>
+		<div  id="contact-msg" class="col-md-4">
+		  <p>Want to get in touch with me? feel free to drop me a line anytime.</p>
+		  <p>I promise to reply A.S.A.P.</p>
+		</div>
+	  </div>
+	</section>
+  </div> <!-- / contact-->
+</div>
+
+<div id="bottom" class="light-grey">
+  <div class="col-md-3"></div>
+  <div class="col-md-4">
+	<h3><b>About This Page</b></h3>
+	<br>
+	<div>Made with <i class="fa fa-coffee"></i> and <i class="fa fa-music" aria-hidden="true"></i> by <a href="#">Ash</a></div>
+  </div>
+  <div class="col-md-4">
+	<h3><b>Around The Web</b></h3>
+	<div class="social-media">
+	  <i class="fa fa-linkedin-square"></i>
+	  <i class="fa fa-github-square"></i>
+	  <i class="fa fa-twitter-square"></i>
+	  <i class="fa fa-google-plus-square"></i>
+	</div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+<div id="footer">
+  <div class="text-center">
+	Ash © 2017. All Rights Reserved
+  </div>
+</div>
+</body>
+</html>
