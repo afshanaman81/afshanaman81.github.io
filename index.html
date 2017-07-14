@@ -3,35 +3,48 @@
 <head>
     <title>Portfolio</title>
     <script src="portfolio/js/jquery-1.10.1.min.js"></script>
+
     <script>
-		$(function(){
-			$("#header").load("portfolio/includes/header.html");
-			$("#navbar").load("portfolio/includes/navbar.html");
-			$("#socialmedia").load("portfolio/includes/socialmedia.html");
-			$("#footer").load("portfolio/includes/footer.html");
-		});
+	    $(function(){
+			$("#header").load("portfolio/includes/header.html", function(){
+				$("#navbar").load("portfolio/includes/navbar.html",function(){
+					$("#footer").load("portfolio/includes/footer.html", function(){
+						$('#contents').show()
+                    });
+                });
+			});
+	    })
 
     </script>
     <div id="header"></div>
 
+
 </head>
 <body>
-<div id="navbar" class="navbar"></div>
+    <div id="contents" hidden>
+        <div id="navbar" class="navbar"></div>
 
-<div class="container profile">
-  <div class="span3"> <img class='rounded' src="portfolio/img/profile.jpg" alt=""> </div>
-  <div class="span5">
-    <h1>Afshan Aman</h1>
-    <h3>Full Stack Web and Android Developer| </h3>
-    <p> Hello I am Juan Dela Cruz Web and Graphics Designer from Philipines. If yopu have something to be done just call my name and I will be there. :-) </p>
-    <a href="#" class="hire-me"><i class="icon-paper-plane"></i> Hire Me </a> </div>
-</div>
+        <div class="container profile">
+            <div class="span3"> <img class='rounded' src="portfolio/img/profile.jpg" alt="" title="cannot download (check css)"> </div>
+            <div class="span5">
+                <h1>Afshan Aman</h1>
+                <h3>Data Analyst | Software Engineer </h3>
+                <p> I am a Full Stack Web, and Android Developer
+                    with an MSc in Computer Science from Germany and over 7 years of
+                    software development, research and data analysis experience. </p>
+                <p style="font-size: medium; font-style: italic; text-align: justify">
+                    I have been working full time for all my professional career but I love to travel
+                    and would like to move away from a 9 to 5 kind of jobs to spend some time on my
+                    other hobbies such as motorcycle riding and wood-working.
+                    Therefore, I am looking for freelance opportunities to work from anywhere. </p>
+                <a href="#" class="hire-me"><i class="icon-paper-plane"></i> Hire Me </a> </div>
+        </div>
 
-<div id="footer"></div>
-
-<script src="portfolio/js/bootstrap.min.js"></script>
-<script>
-$('#myModal').modal('hidden')
-</script>
+        <div id="footer"></div>
+    </div>
+    <script src="portfolio/js/bootstrap.min.js"></script>
+    <script>
+        $('#myModal').modal('hidden')
+    </script>
 </body>
 </html>

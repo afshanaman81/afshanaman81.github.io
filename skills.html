@@ -5,80 +5,109 @@
   <script src="portfolio/js/jquery-1.10.1.min.js"></script>
   <script>
 	  $(function(){
-		  $("#header").load("portfolio/includes/header.html");
-		  $("#navbar").load("portfolio/includes/navbar.html", function(){
-              $('.active').removeClass('active')
-			  $('#skills').addClass('active')
+		  $("#header").load("portfolio/includes/header.html", function(){
+			  $("#navbar").load("portfolio/includes/navbar.html",function(){
+				  $('.active').removeClass('active')
+				  $('#skills').addClass('active')
+
+				  $("#footer").load("portfolio/includes/footer.html", function(){
+					  $('#contents').show()
+				  });
+			  });
 		  });
-		  $("#socialmedia").load("portfolio/includes/socialmedia.html");
-		  $("#footer").load("portfolio/includes/footer.html");
-	  });
+	  })
 
   </script>
   <div id="header"></div>
 </head>
 <body>
-<div id="navbar" class="navbar"></div>
+<div id="contents" hidden>
+    <div id="navbar" class="navbar"></div>
 
-<div id="skills" class="container skills">
-  <h2>My Skills</h2>
+    <div id="skillset" class="container skills">
+        <h2>My Skills</h2>
 
-<!-- Template -->
-  <div class="row">
-    <div class="span3">
-      <div class="ps">
-        <h3>Node</h3>
-      </div>
+        <!-- Template -->
+        <!--
+        <div class="row">
+          <div class="span3">
+            <div class="skill">
+              <h3>Node</h3>
+            </div>
+          </div>
+          <div class="span5">
+            <h3>NodeJs <span>90%</span></h3>
+            <div class="expand-bg"> <span class="expand skill2"> </span> </div>
+          </div>
+        </div>-->
     </div>
-    <div class="span5">
-      <h3>NodeJs <span>90%</span></h3>
-      <div class="expand-bg"> <span class="expand ps2"> &nbsp; </span> </div>
-    </div>
-  </div>
 
-
-
+    <div id="footer"></div>
 </div>
-
-<div id="footer"></div>
-
 <script src="portfolio/js/bootstrap.min.js"></script>
 <script>
   $('#myModal').modal('hidden')
 
-  $(function(){
-  	  const container = document.getElementById("skills")
-      const row = document.createElement("div")
-      const span3 = document.createElement("div")
-	  const span5 = document.createElement("div")
+    $(function(){
+        var skills = ["Javascript", "JQuery", "CSS", "NodeJS","Android", "Vue", "SQL", "Matlab", "STATA" ]
+	    var percents = [100, 85, 80, 80, 90, 40, 50, 80, 100 ]
+	    var colors = ["#30a5dc", "#ee742b", "#39d084", "#f04949", "purple", "orange", "grey", "#F0788C", "#3C7896"];
+        var proficiency     // "novice", "intermediate", "advanced", and "expert"
 
-	  const ps = document.createElement("div")
-	  const expand = document.createElement("div")
+        for (i=0;i < skills.length; i++) {
+            const skillname = skills[i]
+            const p = percents[i]
+            if (p <= 40){
+            	proficiency = "Novice"
+            }else if (p > 40 & p <= 60){
+            	proficiency  = "Intermediate"
+            }else if (p > 60 & p <= 80){
+	            proficiency  = "Advance"
+            } else if (p > 80){
+	            proficiency  = "Expert"
+            }
 
-      const span3_h3 = document.createElement("h3")
-	  const span5_h3 = document.createElement("h3")
 
-      ps.appendChild(span3_h3)
-      span5.appendChild(span5_h3)
+            const container = document.getElementById("skillset")
+            const row = document.createElement("div")
+            const span3 = document.createElement("div")
+            const span5 = document.createElement("div")
 
-      span3.appendChild(ps)
-      span5.appendChild(expand)
+            const skill = document.createElement("div")
+            const expand = document.createElement("div")
 
-      row.appendChild(span3)
-      row.appendChild(span5)
+            const span3_h3 = document.createElement("h3")
+            const span5_h3 = document.createElement("h3")
 
-      container.appendChild(row)
+            skill.appendChild(span3_h3)
+            span5.appendChild(span5_h3)
 
-      row.setAttribute("class","row")
-	  span3.setAttribute("class","span3")
-	  span5.setAttribute("class","span5")
-	  ps.setAttribute("class","ps")
-	  expand.setAttribute("class","expand-bg")
+            span3.appendChild(skill)
+            span5.appendChild(expand)
 
-      span3_h3.innerHTML="Node"
-      span5_h3.innerHTML="NodeJs"
+            row.appendChild(span3)
+            row.appendChild(span5)
 
-  })
+            container.appendChild(row)
+
+            row.classList.add("class", "row")
+            span3.classList.add("class", "span3")
+            span5.classList.add("class", "span5")
+            skill.classList.add("class", "skill")
+            expand.classList.add("class", "expand-bg")
+
+            span3_h3.innerHTML = skillname
+            span5_h3.innerHTML = proficiency + "<span>" + percents[i] + "%</span>"
+            expand.innerHTML = "<span id=" + skillname + " class='expand'> </span>"
+            const bar = document.getElementById(skillname)
+
+            if (bar != null) {
+	            bar.style.width = (percents[i] -2) + "%"
+                bar.style.background = colors[i]
+            }
+            skill.style.background = colors[i]
+        }
+    })
 </script>
 </body>
 </html>
