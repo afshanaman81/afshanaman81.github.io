@@ -51,12 +51,12 @@ a.hire-me:hover {
 	padding-bottom:80px;
 }
 ul.social-icons {
-	margin:20px 0;
+	/*margin:20px 0;*/
 }
 ul.social-icons li {
 	list-style:none;
 	display:inline-block;
-	margin:10px;
+	margin:10px 10px 20px 10px;
 }
 ul.social-icons li:first-child {
 	margin-left:0;
@@ -66,6 +66,9 @@ ul.social-icons li a {
 }
 ul.social-icons li a:hover {
 	opacity:1;
+}
+.social-icons img{
+	width: 40px;
 }
 /***** Skills *****/
 .skills .span3 {
@@ -282,3 +285,4 @@ ul.work-images li img:hover {
 	-moz-border-radius:50%;
 	border-radius:50%;
 }
+
