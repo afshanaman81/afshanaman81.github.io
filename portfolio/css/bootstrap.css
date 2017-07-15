@@ -2837,10 +2837,9 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 .navbar-inner {
 	min-height: 90px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 	background-color: #f04949;
- *zoom: 1;
 }
 .navbar-inner:before, .navbar-inner:after {
 	display: table;
@@ -2851,7 +2850,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 	clear: both;
 }
 .navbar .container {
-	width: 840px;
+	width: 880px;
 }
 .nav-collapse.collapse {
 	height: auto;
