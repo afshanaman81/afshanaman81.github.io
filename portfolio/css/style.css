@@ -255,21 +255,18 @@ ul.work-images li img:hover {
 }
 
 
-.navbar{
+/*.navbar{
 	position:fixed;
 	width: 100%;
 	height:10%;
 	min-height: 95px;
 	z-index: 1;
-}
+}*/
 
 .topstyle{
 	margin-bottom: 200px;
 	position: relative;
 	top: 110px;
-}
-.staytop{
-    position: fixed;
 }
 .centered {
     text-align:center;
