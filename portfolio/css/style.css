@@ -254,17 +254,8 @@ ul.work-images li img:hover {
 	pointer-events: none;
 }
 
-
-/*.navbar{
-	position:fixed;
-	width: 100%;
-	height:10%;
-	min-height: 95px;
-	z-index: 1;
-}*/
-
 .topstyle{
-	margin-bottom: 200px;
+	margin-bottom: 150px;
 	position: relative;
 	top: 110px;
 }
