@@ -63,11 +63,11 @@
     </div>
     <div class="modal-body">
         <form id="email_form">
-            <input type="text" name="sender"  placeholder="Your Name">
-            <input type="text" name="from"    placeholder="Your Email">
+            <input type="text" name="sender"  placeholder="Your Name *">
+            <input type="text" name="from"    placeholder="Your Email *">
             <input type="text" name="subject" placeholder="Subject">
-            <textarea rows="3" name="body"    placeholder="Message" style="width:80%"></textarea>
-            <br>
+            <textarea rows="3" name="body"    placeholder="Message *" style="width:80%"></textarea>
+            <br><p>fields marked with * are mandatory</p><br>
             <button id="send" name="send" type="submit" class="btn btn-large">
                 <i class="icon-paper-plane"></i> Get in Touch
             </button>
@@ -81,31 +81,54 @@
 $(function(){
     //send email using the postmail service
 	var form_id = "email_form";
-
 	var $form   = $("#" + form_id);
-
 	var data    = {
 		"access_token": "jbmt3sfrrp4f4gcwp0ro8agz" // sent after you sign up
 	};
 
 	var sendButton = $("#" + form_id + " [name='send']");
 
-	sendButton.on('click', send);
+	sendButton.on('click', process);
 
-	function send() {
-		sendButton.val('Sending…');
-		sendButton.prop('disabled',true);
-
+	function process(){
+		// TODO: check mandatory fields
+        // https://formden.com/blog/validate-contact-form-jquery
 		var subject = $("#" + form_id + " [name='subject']").val();
 		var message = $("#" + form_id + " [name='body']").val();
 		var sender  = $("#" + form_id + " [name='sender']").val();
 		var from    = $("#" + form_id + " [name='from']").val();
 
-		var text    = message + "\n\r\r" + sender + "\n" + from;
+
+		var form_data=$("#"+form_id).serializeArray();
+		var error_free=true;
+		for (var input in form_data){
+            var selector = form_data[input]['name']
+			var element=$("#" + form_id + " [name='" + selector + "']").val();
+			var valid= (element != "");
+
+            if (selector != "subject") {
+                if (!valid) {
+                    error_free = false;
+                }
+            }
+		}
+
+		if (!error_free){
+			console.log("formed not filled correctly")
+			event.preventDefault();
+		}
+		else{
+			console.log('No errors: Form will be submitted');
+			var text    = message + "\n\r\r" + sender + "\n" + from;
+			send(subject, text)
+		}
+    }
+
+	function send(subject, text) {
+		sendButton.val('Sending…');
+		sendButton.prop('disabled',true);
 		data['subject'] = subject;
 		data['text']    = text;
-
-		console.log(data)
 
 		$.post('https://postmail.invotes.com/send',
 			data,
@@ -133,5 +156,7 @@ $(function(){
 	$form.submit(function( event ) {
 		event.preventDefault();
 	});
+
+
 })
 </script>
