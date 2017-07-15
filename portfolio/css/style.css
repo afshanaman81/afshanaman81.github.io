@@ -225,6 +225,13 @@ ul.work-images li img {
 ul.work-images li img:hover {
 	opacity:0.1;
 }
+.work  p{
+    font-family: "Agency FB";
+    font-size:20px;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
 /***** Resume container *****/
 .resume h3 {
 	margin:60px 0;
