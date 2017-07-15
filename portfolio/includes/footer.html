@@ -62,13 +62,76 @@
         <h3 id="myModalLabel"><i class="icon-mail"></i> Contact Me</h3>
     </div>
     <div class="modal-body">
-        <form action="#">
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Email">
-            <input type="text" placeholder="Subject">
-            <textarea rows="3" style="width:80%"></textarea>
+        <form id="email_form">
+            <input type="text" name="sender"  placeholder="Your Name">
+            <input type="text" name="from"    placeholder="Your Email">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea rows="3" name="body"    placeholder="Message" style="width:80%"></textarea>
             <br>
-            <button type="submit" class="btn btn-large"><i class="icon-paper-plane"></i> Get in Touch</button>
+            <button id="send" name="send" type="submit" class="btn btn-large">
+                <i class="icon-paper-plane"></i> Get in Touch
+            </button>
+
         </form>
     </div>
 </div>
+
+<script>
+
+$(function(){
+    //send email using the postmail service
+	var form_id = "email_form";
+
+	var $form   = $("#" + form_id);
+
+	var data    = {
+		"access_token": "jbmt3sfrrp4f4gcwp0ro8agz" // sent after you sign up
+	};
+
+	var sendButton = $("#" + form_id + " [name='send']");
+
+	sendButton.on('click', send);
+
+	function send() {
+		sendButton.val('Sending…');
+		sendButton.prop('disabled',true);
+
+		var subject = $("#" + form_id + " [name='subject']").val();
+		var message = $("#" + form_id + " [name='body']").val();
+		var sender  = $("#" + form_id + " [name='sender']").val();
+		var from    = $("#" + form_id + " [name='from']").val();
+
+		var text    = message + "\n\r\r" + sender + "\n" + from;
+		data['subject'] = subject;
+		data['text']    = text;
+
+		console.log(data)
+
+		$.post('https://postmail.invotes.com/send',
+			data,
+			onSuccess
+		).fail(onError);
+
+		return false;
+	}
+
+	function onSuccess() {
+		console.log("Its a success")
+		// TODO: show a message on the same modal, then redirect
+
+		// remove this to avoid redirect
+		window.location = window.location.pathname
+		//window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+	}
+
+	function onError(error) {
+		console.log("Its an error")
+		// remove this to avoid redirect
+		//window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+	}
+
+	$form.submit(function( event ) {
+		event.preventDefault();
+	});
+})
+</script>
