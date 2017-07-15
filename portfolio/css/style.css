@@ -11,8 +11,8 @@ a.brand img {
 	font-weight:normal;
 	color: #39D084;
 }
-/***** Profile *****/
-	.profile h1 {
+/***** Profile Container *****/
+.profile h1 {
 	color:#39d084;
 	font-weight: normal;
 }
@@ -70,10 +70,7 @@ ul.social-icons li a:hover {
 .social-icons img{
 	width: 40px;
 }
-/***** Skills *****/
-.skills{
-	margin-bottom: 200px;
-}
+/***** Skills Container *****/
 .skills .span3 {
 	width:235px;
 	overflow: hidden;
@@ -203,9 +200,6 @@ width:85%;
 }
 }
 /**** Work container *****/
-.work{
-	margin-bottom: 150px;
-}
 ul.work-images li {
 	list-style:none;
 	display:inline-block;
@@ -235,14 +229,12 @@ ul.work-images li img:hover {
 .resume h3 {
 	margin:60px 0;
 }
-.resume .btn-center {
-	text-align:center;
-}
 .footer {
 	background:#355267;
 	position: fixed;
 	width: 100%;
 	bottom:0;
+	height: 130px;
 }
 .footer p {
 	margin:20px 0;
@@ -260,4 +252,22 @@ ul.work-images li img:hover {
 	-moz-border-radius:50%;
 	border-radius:50%;
 	pointer-events: none;
+}
+
+
+.navbar{
+	position:fixed;
+	width: 100%;
+	height:10%;
+	min-height: 95px;
+	z-index: 1;
+}
+
+.topstyle{
+	margin-bottom: 200px;
+	position: relative;
+	top: 110px;
+}
+.centered {
+    text-align:center;
 }
