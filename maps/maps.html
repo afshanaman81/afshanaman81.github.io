@@ -28,21 +28,25 @@
     <div id="map" class="map" tabindex="0" hidden></div>
 
     <div class="center">
-        <p>Choose a few photos from your computer and
-            they will appear on the map
-            if they have a geo-location meta tag. </p>
-        <p>
-            <i>Disclaimer: Your photos never leave your computer. Its a client-side only script.</i>
+        <h2 class="color-pink">Where have I been?</h2>
+        <!--https://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3-->
+        <p class="para1">If you happen to have some photos on your computer which were captured on a GPS
+            enabled device (such as your smart phone or tablet), you can visualize them on a map by choosing them using
+            the button below.
+            <br><br>PS: if an image doesnt have the GPS information, it will appear somewhere near Vilnius, Latvia!
+        </p>
+        <br>
+        <p class="font-mediaum color-pink">
+            <i>(Disclaimer: Your photos never leave your computer. Its a client-side only script.)</i>
         </p>
         <br><br>
-        <input class="centered" type="file" id="files" name="files[]" multiple />
-    </div>
+        <label class="btn btn-default btn-file bold">
+            Choose Images <input type="file" id="files" name="files[]" multiple style="display: none;">
+        </label>
 
+    </div>
 
     <script src="maps.js"></script>
 </body>
 </html>
 
-
-<!--to push:
-git push upstream master-->

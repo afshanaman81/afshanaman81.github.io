@@ -109,13 +109,13 @@ $(function(){
                     imgcontainer.appendChild(imgclose)
 
                     imgclose.onclick = function() {
-                        console.log("CLOSING")
+                        //console.log("CLOSING")
                         $(imgcontainer).hide();
                         return false;
                     }
 
                     imgcontainer.onclick = function() {
-                        console.log("CLOSING")
+                        //console.log("CLOSING")
                         $(this).hide();
                         return false;
                     }
@@ -139,7 +139,7 @@ $(function(){
         vectorLayer.setSource(vectorSource);
         map.addLayer(vectorLayer)
 
-        console.log(coordinates)
+        //console.log(coordinates)
         //var ext = ol.extent.boundingExtent([coordinates]);
         //map.getView().fit(ext,map.getSize());
 
@@ -147,7 +147,7 @@ $(function(){
 
     // doesnt work :(
     function pushCoords(lat, lng){
-        console.log("lat: " + lat)
+        //console.log("lat: " + lat)
         coordinates.push([lat, lng])
     }
 
@@ -170,4 +170,5 @@ $(function(){
 2. Image rotation
 3. Passing coordinates array for zoom to extent
 4. Hide the file selector division
+5. Provide a way to choose more images or do all over again
 */

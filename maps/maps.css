@@ -1,3 +1,6 @@
+body{
+    background: #cae565;
+}
 .map {
     position: fixed;
     height: 99%;
@@ -46,14 +49,29 @@
 
 .center{
     position: fixed;
-    width: 40%;
+    width: 50%;
+    left: 25%;
+    top: 10%;
     padding: 70px 0;
-    top: 35%;
-    left: 30%;
     text-align: center;
-    /*border:solid;*/
 }
 
 .centered{
     margin:auto;
+}
+
+.para1 {
+    font-family: "Agency FB";
+    font-size: 30px;
+}
+.font-mediaum {
+    font-size: medium;
+}
+
+.color-pink{
+    color: #F0788C;
+}
+
+.bold{
+    font-weight:bold;
 }

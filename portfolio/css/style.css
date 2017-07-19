@@ -270,6 +270,12 @@ ul.work-images li img:hover {
     text-align:center;
 }
 
+#para-details{
+	font-size: 14px;
+	font-style: italic;
+	text-align: justify;
+	color: #F0788C;
+}
 /*form validation*/
 input.invalid, textarea.invalid{
     border: 2px solid red;
