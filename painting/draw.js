@@ -1,11 +1,13 @@
 var context = document.getElementById('canvas').getContext("2d");
 var clickX = new Array();
 var clickY = new Array();
+var X, Y;
 var clickDrag = new Array();
 var strokeColor = new Array();
 var strokeThickness = new Array();
 var currentColor = 'black';
 var currentThickness = 5;
+var currentTool = "pencil"
 var paint;
 
 
@@ -14,7 +16,13 @@ $('#canvas').mousedown(function(e){
 	var mouseY = e.pageY - this.offsetTop;
 
 	paint = true;
-	addClick(mouseX, mouseY);
+	//addClick(mouseX, mouseY);
+	if (currentTool == 'pencil' | currentTool == "brush" | currentTool == 'highlight'){
+		addClick(mouseX, mouseY);
+	}else{
+		X = mouseX;
+		Y = mouseY;
+	}
 	redraw();
 });
 
@@ -42,30 +50,50 @@ function addClick(x, y, dragging)
 
 function redraw(){
 
-	// clear the canvas
+	// to clear the canvas (I dont want to in this instance)
 	//context.clearRect(0, 0, context.canvas.width, context.canvas.height);
 
-	// draw the stroke
-	context.lineJoin = "round";
+	if (currentTool == 'pencil'){
+		// draw the stroke
+		context.lineJoin = "round";
 
-	for(var i=0; i < clickX.length; i++) {
-		context.beginPath();
-		if(clickDrag[i] && i){
-			context.moveTo(clickX[i-1], clickY[i-1]);
-		}else{
-			context.moveTo(clickX[i]-1, clickY[i]);
+		for(var i=0; i < clickX.length; i++) {
+			context.beginPath();
+			if(clickDrag[i] && i){
+				context.moveTo(clickX[i-1], clickY[i-1]);
+			}else{
+				context.moveTo(clickX[i]-1, clickY[i]);
+			}
+			context.lineTo(clickX[i], clickY[i]);
+			context.closePath();
+			context.strokeStyle = strokeColor[i];
+			context.lineWidth = strokeThickness[i];
+			context.stroke();
 		}
-		context.lineTo(clickX[i], clickY[i]);
-		context.closePath();
-		context.strokeStyle = strokeColor[i];
-		context.lineWidth = strokeThickness[i];
-		context.stroke();
+	}else if (currentTool == 'spray'){
+		// https://stackoverflow.com/questions/16451749/how-to-add-spray-paint-tool-for-html5-canvas
+		let dots = 20;
+		let radius = currentThickness + 5;
+
+		context.rect(X, Y, 1, 1);
+		context.fillStyle = currentColor;
+		for(var j=0; j < dots; j++){
+			let x = X +  Math.cos( Math.random() * Math.PI * 2 ) * radius * Math.random();
+			let y = Y +  Math.sin( Math.random() * Math.PI * 2 ) * radius * Math.random();
+
+			context.rect(x, y, 1, 1);
+			context.fill()
+		}
 	}
+
 }
 
 function setColor(clr) {
 	currentColor = clr;
+}
 
+function setTool(tool) {
+	currentTool = tool;
 }
 
 function setThickness(w) {
