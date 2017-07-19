@@ -1,45 +1,32 @@
 <html>
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-<style>
-body{
-background-color: #4e5556 !important;
-}
-
-.font-white{
-color: white;
-}
-
-#icon{
-font-size: 60px;
-}
-
-</style>
-
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="text-center font-white">
-  <h1> Free C<i class="wi wi-rain-wind"></i>de Camp </h1>
-  <h1> Weather App </h1>
-  <br>
-  <div id="location"></div>
-  <div id="temprature"></div>
-  <div id="description"></div>
-  <br>
-  <div id="icon">
-    <div id="clear" hidden>       <i class="wi wi-day-sunny" ></i>      </div>
-    <div id="rain" hidden>        <i class="wi wi-day-rain"></i>        </div>
-    <div id="snow" hidden>        <i class="wi wi-day-snow"></i>        </div>
-    <div id="clouds" hidden>      <i class="wi wi-day-cloudy"></i>      </div>
-    <div id="thunderstorm" hidden><i class="wi wi-day-thunderstorm"></i></div>
-  </div>
+    <div class="text-center font-white">
+    <h1> Free C<i class="wi wi-rain-wind"></i>de Camp </h1>
+    <h1> Weather App </h1>
+    <div id="spinner" class="loader"></div>
 
+    <div id="weather">
+        <br>
+        <div id="location"></div>
+        <div id="temprature"></div>
+        <div id="description"></div>
+        <br>
+        <div id="icon">
+            <div id="clear" hidden>       <i class="wi wi-day-sunny" ></i>      </div>
+            <div id="rain" hidden>        <i class="wi wi-day-rain"></i>        </div>
+            <div id="snow" hidden>        <i class="wi wi-day-snow"></i>        </div>
+            <div id="clouds" hidden>      <i class="wi wi-day-cloudy"></i>      </div>
+            <div id="thunderstorm" hidden><i class="wi wi-day-thunderstorm"></i></div>
+        </div>
+    </div>
 </div>
 
 <script src="script.js"></script>
