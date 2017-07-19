@@ -16,7 +16,6 @@ $('#canvas').mousedown(function(e){
 	var mouseY = e.pageY - this.offsetTop;
 
 	paint = true;
-	//addClick(mouseX, mouseY);
 	if (currentTool == 'pencil' | currentTool == "brush" | currentTool == 'highlight'){
 		addClick(mouseX, mouseY);
 	}else{
@@ -39,8 +38,7 @@ $('#canvas').mouseup(function(e){
 
 
 
-function addClick(x, y, dragging)
-{
+function addClick(x, y, dragging) {
 	clickX.push(x);
 	clickY.push(y);
 	clickDrag.push(dragging);
@@ -58,6 +56,9 @@ function redraw(){
 		context.lineJoin = "round";
 
 		for(var i=0; i < clickX.length; i++) {
+
+			context.strokeStyle = strokeColor[i];
+			context.lineWidth = strokeThickness[i];
 			context.beginPath();
 			if(clickDrag[i] && i){
 				context.moveTo(clickX[i-1], clickY[i-1]);
@@ -66,24 +67,24 @@ function redraw(){
 			}
 			context.lineTo(clickX[i], clickY[i]);
 			context.closePath();
-			context.strokeStyle = strokeColor[i];
-			context.lineWidth = strokeThickness[i];
 			context.stroke();
 		}
 	}else if (currentTool == 'spray'){
 		// https://stackoverflow.com/questions/16451749/how-to-add-spray-paint-tool-for-html5-canvas
+		// http://jsbin.com/awiyan/3/edit?html,css,js,output
 		let dots = 20;
 		let radius = currentThickness + 5;
-
-		context.rect(X, Y, 1, 1);
 		context.fillStyle = currentColor;
-		for(var j=0; j < dots; j++){
-			let x = X +  Math.cos( Math.random() * Math.PI * 2 ) * radius * Math.random();
-			let y = Y +  Math.sin( Math.random() * Math.PI * 2 ) * radius * Math.random();
+		context.beginPath();            // to allocate new style (color, thickness etc) to a drawing
+			context.rect(X, Y, 1, 1);
+			for(var j=0; j < dots; j++){
+				let x = X +  Math.cos( Math.random() * Math.PI * 2 ) * radius * Math.random();
+				let y = Y +  Math.sin( Math.random() * Math.PI * 2 ) * radius * Math.random();
 
-			context.rect(x, y, 1, 1);
-			context.fill()
-		}
+				context.rect(x, y, 1, 1);
+				context.fill()
+			}
+		context.closePath();
 	}
 
 }
