@@ -11,13 +11,19 @@ var currentTool = "pencil"
 var paint;
 
 
+//http://perfectionkills.com/exploring-canvas-drawing-techniques/
+// https://stackoverflow.com/questions/16451749/how-to-add-spray-paint-tool-for-html5-canvas
+// http://jsbin.com/awiyan/3/edit?html,css,js,output
+// TODO: implement using Object Orientated Techniques
+
+
 $('#canvas').mousedown(function(e){
+	clearArrays();
+	paint = true;
 	var mouseX = e.pageX - this.offsetLeft;
 	var mouseY = e.pageY - this.offsetTop;
-
-	paint = true;
 	if (currentTool == 'pencil' | currentTool == "brush" | currentTool == 'highlight'){
-		addClick(mouseX, mouseY);
+		addClick(mouseX, mouseY, true);
 	}else{
 		X = mouseX;
 		Y = mouseY;
@@ -37,6 +43,13 @@ $('#canvas').mouseup(function(e){
 });
 
 
+function clearArrays(){
+	clickX = new Array();
+	clickY = new Array();
+	clickDrag = new Array();
+	strokeColor = new Array();
+	strokeThickness = new Array();
+}
 
 function addClick(x, y, dragging) {
 	clickX.push(x);
@@ -47,7 +60,6 @@ function addClick(x, y, dragging) {
 }
 
 function redraw(){
-
 	// to clear the canvas (I dont want to in this instance)
 	//context.clearRect(0, 0, context.canvas.width, context.canvas.height);
 
@@ -70,11 +82,11 @@ function redraw(){
 			context.stroke();
 		}
 	}else if (currentTool == 'spray'){
-		// https://stackoverflow.com/questions/16451749/how-to-add-spray-paint-tool-for-html5-canvas
-		// http://jsbin.com/awiyan/3/edit?html,css,js,output
 		let dots = 20;
 		let radius = currentThickness + 5;
+		context.lineJoin = context.lineCap = 'round';
 		context.fillStyle = currentColor;
+
 		context.beginPath();            // to allocate new style (color, thickness etc) to a drawing
 			context.rect(X, Y, 1, 1);
 			for(var j=0; j < dots; j++){
@@ -96,7 +108,7 @@ function setColor(clr) {
 function setTool(tool) {
 	currentTool = tool;
 	// change cursor image
-	//$('#canvas').css('cursor',"url(img/" + tool +  ".png), auto")
+	$('#canvas').css('cursor',"url(img/" + tool +  "-tip.png), auto")
 }
 
 function setThickness(w) {
