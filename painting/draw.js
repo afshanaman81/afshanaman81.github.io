@@ -95,6 +95,8 @@ function setColor(clr) {
 
 function setTool(tool) {
 	currentTool = tool;
+	// change cursor image
+	//$('#canvas').css('cursor',"url(img/" + tool +  ".png), auto")
 }
 
 function setThickness(w) {
