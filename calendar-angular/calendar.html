@@ -1,0 +1,144 @@
+<html ng-app="calendarApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+    <script src="angular-ui-modal.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="calendar.css">
+
+</head>
+
+<body ng-controller="calendarController">
+
+    <calendar selected="day"></calendar>
+
+    <div class="footer">
+        <span>Selected date: <b>{{day.format('dddd, MMMM Do YYYY')}}</b></label></span><br>
+        <span>Today's date:  <b>{{today.format('dddd, MMMM Do YYYY')}}</b></label></span>
+    </div>
+
+</body>
+
+<!--
+https://responsivedesign.is/patterns/calendar/
+https://www.codementor.io/angularjs/tutorial/angularjs-calendar-directives-less-cess-moment-font-awesome
+http://twinssbc.github.io/AngularJS-ResponsiveCalendar/demo/
+https://dribbble.com/shots/1258657-Round-Calendar-psd-HTML-CSS
+https://codepen.io/marcobiedermann/pen/oztAG
+-->
+
+<!--
+directives
+http://fdietz.github.io/recipes-with-angular-js/directives/directive-to-directive-communication.html
+http://fdietz.github.io/recipes-with-angular-js/common-user-interface-patterns/displaying-a-modal-dialog.html
+-->
+
+
+<!-- Scripts-->
+<script>
+    const app = angular.module("calendarApp",["ui.bootstrap.modal"]);
+
+    app.controller('calendarController',
+        function($scope){
+            $scope.today = moment();
+        }
+    );
+
+    app.directive("calendar", function() {
+	    return {
+		    restrict: "E",
+		    templateUrl: "calendar-template.html",
+		    scope: {
+			    selected: "="
+		    },
+		    link: function(scope) {
+			    scope.selected = _removeTime(scope.selected || moment());
+			    scope.month = scope.selected.clone();
+
+			    var start = scope.selected.clone();
+			    start.date(1);
+			    _removeTime(start.day(0));
+
+			    _buildMonth(scope, start, scope.month);
+
+			    scope.select = function(day) {
+				    scope.selected = day.date;
+
+				    // show modal to create a calendar event
+				    scope.showModal = true;
+				    // TODO: move the modal related stuff to another controller and template
+			    };
+
+			    scope.open = function() {
+				    scope.showModal = true;
+			    };
+
+			    scope.createEvent = function() {
+				    scope.showModal = false;
+
+                    if (!scope.eventtitle) scope.eventtitle = "Event on " + scope.selected.format(('D MMM, YYYY'))
+				    console.log(scope.eventtitle)
+				    // 1. save data in database ??
+
+                    // 2. create child div to show the event on the day
+
+			    };
+
+			    scope.closeDialog = function() {
+				    scope.showModal = false;
+			    };
+
+
+			    scope.next = function() {
+				    var next = scope.month.clone();
+				    _removeTime(next.month(next.month()+1)).date(1);
+                    scope.month.month(scope.month.month()+1);
+                    _buildMonth(scope, next, scope.month);
+                };
+
+                scope.previous = function() {
+                    var previous = scope.month.clone();
+                    _removeTime(previous.month(previous.month()-1).date(1));
+                    scope.month.month(scope.month.month()-1);
+                    _buildMonth(scope, previous, scope.month);
+                };
+            }
+        };
+
+        function _removeTime(date) {
+            return date.day(0).hour(0).minute(0).second(0).millisecond(0);
+        }
+
+        function _buildMonth(scope, start, month) {
+            scope.weeks = [];
+            var done = false, date = start.clone(), monthIndex = date.month(), count = 0;
+            while (!done) {
+                scope.weeks.push({ days: _buildWeek(date.clone(), month) });
+                date.add(1, "w");
+                done = count++ > 2 && monthIndex !== date.month();
+                monthIndex = date.month();
+            }
+        }
+
+        function _buildWeek(date, month) {
+            var days = [];
+            for (var i = 0; i < 7; i++) {
+                days.push({
+                    name: date.format("dd").substring(0, 1),
+                    number: date.date(),
+                    isCurrentMonth: date.month() === month.month(),
+                    isToday: date.isSame(new Date(), "day"),
+                    date: date
+                });
+                date = date.clone();
+                date.add(1, "d");
+            }
+            return days;
+        }
+    });
+</script>
+</html>
