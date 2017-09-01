@@ -69,6 +69,10 @@ ul.social-icons li a:hover {
 }
 .social-icons img{
 	width: 40px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
 }
 /***** Skills Container *****/
 .skills .span3 {

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b9f1704c-fa4e-45f4-8c49-14e627698b52" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/painting/draw.js" afterPath="$PROJECT_DIR$/painting/draw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio/css/style-single-page.css" afterPath="$PROJECT_DIR$/portfolio/css/style-single-page.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio/css/style.css" afterPath="$PROJECT_DIR$/portfolio/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio/includes/footer.html" afterPath="$PROJECT_DIR$/portfolio/includes/footer.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,21 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="skills.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/skills.html">
+      <file leaf-file-name="draw.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/painting/draw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="52" column="94" lean-forward="true" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/portfolio/includes/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="32" column="21" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="32" selection-end-column="21" />
+            <state relative-caret-position="323">
+              <caret line="103" column="24" lean-forward="true" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -103,7 +96,6 @@
         <option value="$PROJECT_DIR$/portfolio/includes/nav-bar.html" />
         <option value="$PROJECT_DIR$/portfolio/includes/socialmedia.html" />
         <option value="$PROJECT_DIR$/portfolio/includes/header.html" />
-        <option value="$PROJECT_DIR$/portfolio/css/style-single-page.css" />
         <option value="$PROJECT_DIR$/portfolio/includes/skills.html" />
         <option value="$PROJECT_DIR$/index-old.html" />
         <option value="$PROJECT_DIR$/index-static.html" />
@@ -119,14 +111,15 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/maps/maps.js" />
         <option value="$PROJECT_DIR$/maps/maps.css" />
-        <option value="$PROJECT_DIR$/portfolio/css/style.css" />
         <option value="$PROJECT_DIR$/maps/maps.html" />
         <option value="$PROJECT_DIR$/painting/painting.html" />
         <option value="$PROJECT_DIR$/dashboard/dashboard.css" />
         <option value="$PROJECT_DIR$/painting/painting.css" />
-        <option value="$PROJECT_DIR$/painting/draw.js" />
         <option value="$PROJECT_DIR$/skills.html" />
         <option value="$PROJECT_DIR$/portfolio/includes/footer.html" />
+        <option value="$PROJECT_DIR$/portfolio/css/style.css" />
+        <option value="$PROJECT_DIR$/portfolio/css/style-single-page.css" />
+        <option value="$PROJECT_DIR$/painting/draw.js" />
       </list>
     </option>
   </component>
@@ -144,8 +137,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="344" />
-    <option name="width" value="1292" />
+    <option name="x" value="833" />
+    <option name="width" value="854" />
     <option name="height" value="1017" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -166,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,18 +169,13 @@
             <path>
               <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
+              <item name="painting" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -364,12 +351,13 @@
       <workItem from="1501341987063" duration="37000" />
       <workItem from="1501351671305" duration="768000" />
       <workItem from="1501352567535" duration="13000" />
-      <workItem from="1503135988747" duration="2576000" />
+      <workItem from="1503135988747" duration="3115000" />
+      <workItem from="1504246071307" duration="445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182630000" />
+    <option name="totallyTimeSpent" value="183614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -479,13 +467,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio/includes/extraskills.html" />
-    <entry file="file://$PROJECT_DIR$/portfolio/css/style-single-page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="97" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portfolio-old/style/main.css" />
     <entry file="file://$PROJECT_DIR$/index-old.html" />
     <entry file="file://$PROJECT_DIR$/portfolio/font/demo.html">
@@ -588,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="243" column="14" lean-forward="false" selection-start-line="243" selection-start-column="14" selection-end-line="243" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/maps/maps.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -653,18 +627,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/painting/draw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calendar-angular/calendar-template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="104" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,14 +645,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-890">
+          <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio/css/style-single-page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="70" column="1" lean-forward="false" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio/includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="21" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="32" selection-end-column="21" />
+        <state relative-caret-position="51">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -695,7 +675,15 @@
     <entry file="file://$PROJECT_DIR$/skills.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
-          <caret line="52" column="94" lean-forward="true" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
+          <caret line="52" column="94" lean-forward="false" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/painting/draw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="103" column="24" lean-forward="true" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
           <folding />
         </state>
       </provider>
