@@ -204,7 +204,7 @@ th, td {
 
 
 /*for the resizable part (part of the jquery css)*/
-.ui-icon { width: 16px; height: 16px; background-image: url(http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/images/ui-icons_222222_256x240.png)/*{iconsContent}*/; }
+.ui-icon { width: 16px; height: 16px; background-image: url(https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/images/ui-icons_222222_256x240.png)/*{iconsContent}*/; }
 .ui-resizable { position: fixed;}
 .ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
 .ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
