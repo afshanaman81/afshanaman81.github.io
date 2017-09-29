@@ -1,5 +1,34 @@
 /*This stylesheet contains some custom class rather than Bootstrap*/
-		
+/*http://www.color-hex.com/color-palette/895*/
+/*http://spoonflower.typepad.com/.a/6a00e5523f5f4d883401a3fd11721a970b-pi*/
+/*https://designschool.canva.com/blog/brand-color-palette/*/
+
+/* -- COLOR SCHEME -- */
+/*:root{
+	--header-color: #ffcc5c;
+	--body-color: #96ceb4;
+	--footer-color: #ffeead;
+	--links-color: #ff6f69;
+
+}
+
+.navbar-color{
+	background: var(--header-color);
+}
+.body-color{
+	background: var(--body-color);
+}
+
+.footer-color{
+	background: var(--footer-color);
+}
+.button-active{
+
+}*/
+
+/* !-- COLOR SCHEME --! */
+
+
 a.brand img {
 	border-radius:50%;
 	border:5px solid #fff;
