@@ -28,6 +28,9 @@
 
 /* !-- COLOR SCHEME --! */
 
+.navbar{
+    z-index: 9999;
+}
 
 a.brand img {
 	border-radius:50%;
@@ -261,10 +264,6 @@ ul.work-images li img {
 }
 ul.work-images li img:hover {
 	opacity:0.1;
-}
-ul.bxslider {
-    margin: 0;
-    padding: 0;
 }
 
 

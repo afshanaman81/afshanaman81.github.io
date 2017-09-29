@@ -28,13 +28,13 @@
     <div class="container work topstyle">
         <h2>My Work</h2>
         <div id="simple-apps">
-            <h3>Simple Apps</h3>
-            <div id="slider">
+            <h4>Client-side Only Apps</h4><br>
+            <div id="slider-simple">
                 <ul id="slider1" class="work-images">
                     <li>
                         <div class="slide">
                             <a class="fancybox-thumb" rel="fancybox-thumb" href="localweather/weather.html" target="_blank">
-                                <img src="portfolio/img/set4/1.jpg" alt="">
+                                <img src="portfolio/img/set2/1.jpg" alt="">
                             </a>
                             <p>Local Weather</p>
                         </div>
@@ -42,7 +42,7 @@
                     <li>
                         <div class="slide">
                             <a class="fancybox-thumb" rel="fancybox-thumb" href="dailyquote/daily-quote.html" target="_blank">
-                                <img src="portfolio/img/set4/2.jpg" alt="">
+                                <img src="portfolio/img/set2/2.jpg" alt="">
                             </a>
                             <p>Daily Quotes</p>
                         </div>
@@ -50,7 +50,7 @@
                     <li>
                         <div class="slide">
                             <a class="fancybox-thumb" rel="fancybox-thumb" href="dashboard/dashboard.html" target="_blank">
-                                <img src="portfolio/img/set4/3.jpg" alt="">
+                                <img src="portfolio/img/set2/3.jpg" alt="">
                             </a>
                             <p>Dashboard Design</p>
                         </div>
@@ -58,7 +58,7 @@
                     <li>
                         <div class="slide">
                             <a class="fancybox-thumb" rel="fancybox-thumb" href="maps/maps.html" target="_blank">
-                                <img src="portfolio/img/set4/4.jpg" alt="">
+                                <img src="portfolio/img/set2/4.jpg" alt="">
                             </a>
                             <p>Pictures on Google Map</p>
                         </div>
@@ -66,7 +66,7 @@
                     <li>
                         <div class="slide">
                             <a class="fancybox-thumb" rel="fancybox-thumb" href="randomwiki/randomwiki.html" target="_blank">
-                                <img src="portfolio/img/set4/5.jpg" alt="">
+                                <img src="portfolio/img/set2/5.jpg" alt="">
                             </a>
                             <p>Random Wiki Page</p>
                         </div>
@@ -74,7 +74,64 @@
                     <li>
                         <div class="slide">
                             <a class="fancybox-thumb" rel="fancybox-thumb" href="painting/painting.html" target="_blank">
-                                <img src="portfolio/img/set4/6.jpg" alt="">
+                                <img src="portfolio/img/set2/6.jpg" alt="">
+                            </a>
+                            <p>Canvas & Painting</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="advanced-apps">
+            <h4>NodeJs Server Apps</h4><br>
+            <div id="slider-advanced">
+                <ul id="slider2" class="work-images">
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="https://find-my-way.herokuapp.com/" target="_blank">
+                                <img src="portfolio/img/set3/1.jpg" alt="">
+                            </a>
+                            <p>Find My Way</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="dailyquote/daily-quote.html" target="_blank">
+                                <img src="portfolio/img/set3/2.jpg" alt="">
+                            </a>
+                            <p>Daily Quotes</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="dashboard/dashboard.html" target="_blank">
+                                <img src="portfolio/img/set3/3.jpg" alt="">
+                            </a>
+                            <p>Dashboard Design</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="maps/maps.html" target="_blank">
+                                <img src="portfolio/img/set3/4.jpg" alt="">
+                            </a>
+                            <p>Pictures on Google Map</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="randomwiki/randomwiki.html" target="_blank">
+                                <img src="portfolio/img/set3/5.jpg" alt="">
+                            </a>
+                            <p>Random Wiki Page</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="painting/painting.html" target="_blank">
+                                <img src="portfolio/img/set3/6.jpg" alt="">
                             </a>
                             <p>Canvas & Painting</p>
                         </div>
@@ -109,6 +166,18 @@
 		/*Carousel*/
 		//Source: http://bxslider.com/examples/carousel-demystified#example2
 		$('#slider1').show().bxSlider({
+			slideWidth: 250,
+			minSlides: 2,
+			maxSlides: 4,
+			moveSlides: 1,
+			slideMargin: 20,
+			preloadImages: 'all',
+			keyboardEnabled: true,
+			adaptiveHeight: false
+
+		});
+
+		$('#slider2').show().bxSlider({
 			slideWidth: 250,
 			minSlides: 2,
 			maxSlides: 4,
