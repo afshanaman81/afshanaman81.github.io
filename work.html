@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Portfolio | Work</title>
-  <script src="portfolio/js/jquery-1.10.1.min.js"></script>
-  <script>
-	  $(function(){
-		  $("#header").load("portfolio/includes/header.html", function(){
-			  $("#navbar").load("portfolio/includes/navbar.html",function(){
-				  $('.active').removeClass('active')
-				  $('#work').addClass('active')
+    <title>Portfolio | Work</title>
+    <script src="portfolio/js/jquery-1.10.1.min.js"></script>
+    <script>
+		$(function(){
+			$("#header").load("portfolio/includes/header.html", function(){
+				$("#navbar").load("portfolio/includes/navbar.html",function(){
+					$('.active').removeClass('active')
+					$('#work').addClass('active')
 
-				  $("#footer").load("portfolio/includes/footer.html", function(){
-					  $('#contents').show()
-				  });
-			  });
-		  });
-	  });
+					$("#footer").load("portfolio/includes/footer.html", function(){
+						$('#contents').show()
+					});
+				});
+			});
+		});
 
-  </script>
-  <div id="header"></div>
+    </script>
+    <div id="header"></div>
 </head>
 <body>
 
@@ -27,83 +27,106 @@
 
     <div class="container work topstyle">
         <h2>My Work</h2>
-        <ul class="work-images">
-          <li>
-            <div>
-                <a class="fancybox-thumb" rel="fancybox-thumb" href="localweather/weather.html" target="_blank">
-                    <img src="portfolio/img/set4/1.jpg" alt="">
-                </a>
-                <p>Local Weather</p>
+        <div id="simple-apps">
+            <h3>Simple Apps</h3>
+            <div id="slider">
+                <ul id="slider1" class="work-images">
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="localweather/weather.html" target="_blank">
+                                <img src="portfolio/img/set4/1.jpg" alt="">
+                            </a>
+                            <p>Local Weather</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="dailyquote/daily-quote.html" target="_blank">
+                                <img src="portfolio/img/set4/2.jpg" alt="">
+                            </a>
+                            <p>Daily Quotes</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="dashboard/dashboard.html" target="_blank">
+                                <img src="portfolio/img/set4/3.jpg" alt="">
+                            </a>
+                            <p>Dashboard Design</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="maps/maps.html" target="_blank">
+                                <img src="portfolio/img/set4/4.jpg" alt="">
+                            </a>
+                            <p>Pictures on Google Map</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="randomwiki/randomwiki.html" target="_blank">
+                                <img src="portfolio/img/set4/5.jpg" alt="">
+                            </a>
+                            <p>Random Wiki Page</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="painting/painting.html" target="_blank">
+                                <img src="portfolio/img/set4/6.jpg" alt="">
+                            </a>
+                            <p>Canvas & Painting</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li>
-            <div>
-                <a class="fancybox-thumb" rel="fancybox-thumb" href="dailyquote/daily-quote.html" target="_blank">
-                    <img src="portfolio/img/set4/2.jpg" alt="">
-                </a>
-                <p>Daily Quotes</p>
-            </div>
-          </li>
-          <li>
-            <div>
-                <a class="fancybox-thumb" rel="fancybox-thumb" href="dashboard/dashboard.html" target="_blank">
-                    <img src="portfolio/img/set4/3.jpg" alt="">
-                </a>
-                <p>Dashboard Design</p>
-            </div>
-          </li>
-        </ul>
-        <ul class="work-images">
-          <li>
-            <div>
-                <a class="fancybox-thumb" rel="fancybox-thumb" href="maps/maps.html" target="_blank">
-                    <img src="portfolio/img/set4/4.jpg" alt="">
-                </a>
-                <p>Pictures on Google Map</p>
-            </div>
-          </li>
-          <li>
-            <div>
-                <a class="fancybox-thumb" rel="fancybox-thumb" href="randomwiki/randomwiki.html" target="_blank">
-                    <img src="portfolio/img/set4/5.jpg" alt="">
-                </a>
-                <p>Random Wiki Page</p>
-            </div>
-          </li>
-          <li>
-            <div>
-                <a class="fancybox-thumb" rel="fancybox-thumb" href="painting/painting.html" target="_blank">
-                    <img src="portfolio/img/set4/6.jpg" alt="">
-                </a>
-                <p>Canvas & Painting</p>
-            </div>
-          </li>
-        </ul>
-
+        </div>
     </div>
 
     <div id="footer"></div>
 </div>
 <script src="portfolio/js/bootstrap.min.js"></script>
-<script>
-$('#myModal').modal('hidden')
-</script>
 <script src="portfolio/js/jquery.fancybox.js?v=2.1.5"></script>
+<script src="portfolio/js/jquery.bxslider.js"></script>
 <script>
-$(document).ready(function () {
-    $(".fancybox-thumb").fancybox({
-        helpers: {
-            title: {
-                type: 'inside'
-            },
-            overlay: {
-                css: {
-                    'background': 'rgba(1,1,1,0.65)'
-                }
-            }
-        }
-    });
-});
+	$('#myModal').modal('hidden')
+
+	$(document).ready(function () {
+		$(".fancybox-thumb").fancybox({
+			helpers: {
+				title: {
+					type: 'inside'
+				},
+				overlay: {
+					css: {
+						'background': 'rgba(1,1,1,0.65)'
+					}
+				}
+			}
+		});
+
+		/*Carousel*/
+		//Source: http://bxslider.com/examples/carousel-demystified#example2
+		$('#slider1').show().bxSlider({
+			slideWidth: 250,
+			minSlides: 2,
+			maxSlides: 4,
+			moveSlides: 1,
+			slideMargin: 20,
+			preloadImages: 'all',
+			keyboardEnabled: true,
+			adaptiveHeight: false
+
+		});
+		/*end of Carousel*/
+
+		// issues
+		// 1. very slow or not loading at all
+		//https://github.com/stevenwanderski/bxslider-4/issues/330
+        //https://stackoverflow.com/questions/11658605/how-to-get-bxslider-to-hide-the-slides-until-the-page-loads
+
+	});
 </script>
 </body>
 </html>

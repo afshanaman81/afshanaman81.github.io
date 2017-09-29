@@ -233,6 +233,10 @@ width:85%;
 }
 }
 /**** Work container *****/
+ul.work-images{
+    margin-left:5px !important;    /*Important for the bx slider/carousel*/
+}
+
 ul.work-images li {
 	list-style:none;
 	display:inline-block;
@@ -258,6 +262,12 @@ ul.work-images li img {
 ul.work-images li img:hover {
 	opacity:0.1;
 }
+ul.bxslider {
+    margin: 0;
+    padding: 0;
+}
+
+
 .work  p{
     font-family: "Agency FB";
     font-size:20px;
@@ -326,4 +336,31 @@ input.valid, textarea.valid{
 .error_show{
     color: red;
     margin-left: 10px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 3px;
+}
+button.style1{
+    background-color: #f04949;
+}
+
+button.style2{
+    background-color: #39d084;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    display: none;
 }
