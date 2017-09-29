@@ -275,7 +275,7 @@
     var loadElements = function(selector, callback) {
       var total = selector.find('img:not([src=""]), iframe').length,
       count = 0;
-      if (total === 0) {
+      if (total === 0 || slider.settings.imageWait == false) {
         callback();
         return;
       }
