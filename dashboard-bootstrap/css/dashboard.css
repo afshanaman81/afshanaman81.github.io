@@ -1,0 +1,137 @@
+/*
+Available Google Fonts:
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+a{
+    color: orangered;
+}
+
+#full-page{
+    background: darkslategrey url('../img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    font-family: 'Roboto';
+}
+
+.header-footer{
+    position: fixed;
+    height:6vh;
+    width: 100vw;
+    padding-top: 2vh;
+    margin:0;
+    background: darkgrey;
+    opacity: 0.7;
+}
+
+#header{
+    top: 0;
+}
+#footer{
+    bottom: 0;
+    color: orangered;
+}
+
+#header img{
+    border-radius: 50px;
+    width: 25px;
+}
+
+.middle{
+    position: fixed;
+    top: 6vh;
+    min-height: 88vh;
+    width: 100vw;
+    margin:0;
+}
+
+.further-style{
+    background-color: floralwhite;
+    display: block;
+    text-align: left;
+    padding: 15px;
+}
+
+#main-contents{
+    padding-top: 30px;
+    background: whitesmoke;
+    opacity: 1;
+}
+
+#top-menu{
+
+}
+
+#left-menu{
+    background: darkgrey;
+    padding-top: 2vh;
+    opacity: 0.7;
+}
+
+#left-menu i{
+    font-size: 20px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+#left-menu span{
+    font-size: 15px;
+}
+
+#left-menu div{
+    padding: 10px 0 10px 0;
+    margin: 10px 0 0 20px;
+}
+#left-menu .active,
+#left-menu div:hover{
+    background: rgba(0, 0, 0, 0.2);
+    opacity: .8;
+    border-radius: 3px;
+}
+
+#main{
+    background-color: grey;
+}
+
+.padding-top{
+    padding-top: 30px;
+}
+
+.pull-right{
+    text-align: right;
+}
+
+#notifications{
+
+}
+/* Define how each icon button should look like */
+#notifications .button {
+    font-size: 26px;
+    color: orangered;
+    display: inline-block; /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom */
+    position: relative; /* All 'absolute'ly positioned elements are relative to this one */
+    bottom: 10px;
+}
+
+/* Make the badge float in the top right corner of the button */
+#notifications .button__badge {
+    background-color: #fa3e3e;
+    border-radius: 2px;
+    color: white;
+
+    padding: 1px 3px ;
+    font-size: 10px;
+
+    position: absolute; /* Position the badge within the relatively positioned button */
+    top: 0;
+    right: 0;
+}
