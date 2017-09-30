@@ -111,7 +111,8 @@ a{
 }
 
 #notifications{
-
+    margin: 0;
+    padding: 0;
 }
 /* Define how each icon button should look like */
 #notifications .button {
