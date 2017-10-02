@@ -317,6 +317,7 @@ ul.work-images li img:hover {
 	font-style: italic;
 	text-align: justify;
 	color: #F0788C;
+	padding-bottom: 10px;
 }
 /*form validation*/
 input.invalid, textarea.invalid{
