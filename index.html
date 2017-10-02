@@ -5,15 +5,15 @@
     <script src="portfolio/js/jquery-1.10.1.min.js"></script>
 
     <script>
-	    $(function(){
+		$(function(){
 			$("#header").load("portfolio/includes/header.html", function(){
 				$("#navbar").load("portfolio/includes/navbar.html",function(){
 					$("#footer").load("portfolio/includes/footer.html", function(){
 						$('#contents').show()
-                    });
-                });
+					});
+				});
 			});
-	    })
+		})
 
     </script>
     <div id="header"></div>
@@ -22,41 +22,39 @@
 </head>
 <body class="body-color">
 
-    <div id="contents"  hidden>
-        <div id="navbar" class="navbar"></div>
+<div id="contents"  hidden>
+    <div id="navbar" class="navbar"></div>
 
-        <div class="container profile topstyle">
-            <div class="span3"> <img class='rounded' src="portfolio/img/profile.jpg" alt="" > </div>
-            <div class="span5">
-                <h1>Afshan Aman</h1>
-                <h3>Data Analyst | Software Engineer </h3>
-                <p> I am a Full Stack Web, and Android Developer
-                    with a Masters in Computer Science from Germany and over 7 years of
-                    software development, research and data analysis experience. <br></p>
-		    
-                <p id="para-details">
-                    I am looking for flexible work opportunities allowing me to work from anywhere 
-			and anytime, so that I can spend more time on my other hobbies such as world 
-			travelling, motorcycle riding and wood-working.                   
-		</p>
-		
-		<p id="para-details">
-                    Unless its a dream job, in a dream town with the dream working hours,
-                    in which case I will certainly work full time!
+    <div class="container profile topstyle">
+        <div class="span3"> <img class='rounded' src="portfolio/img/profile.jpg" alt="" > </div>
+        <div class="span5">
+            <h1>Afshan Aman</h1>
+            <h3>Data Analyst | Software Engineer </h3>
+            <p> I am a Full Stack Web, and Android Developer
+                with a Masters in Computer Science from Germany and over 7 years of
+                software development, research and data analysis experience. <br></p>
 
-                </p>
-                <a href="#myModal" role="button" data-toggle="modal" class="hire-me">
-                    <i class="icon-mail"></i> Hire Me
-                </a>
-            </div>
+            <p id="para_details">
+                I am looking for flexible work opportunities allowing me to work from anywhere
+                and anytime, so that I can spend more time on my other hobbies such as world
+                travelling, motorcycle riding and wood-working.
+
+                Unless its a dream job, in a dream town with the dream working hours,
+                in which case I will certainly work full time!
+
+            </p>
+            <a href="#myModal" role="button" data-toggle="modal" class="hire-me">
+                <i class="icon-mail"></i> Hire Me
+            </a>
         </div>
-
-        <div id="footer" class="footer-color"></div>
     </div>
 
-    <script src="portfolio/js/bootstrap.min.js"></script>
-    <script>
-        $('#myModal').modal('hidden')
-    </script>
+    <div id="footer" class="footer-color"></div>
+</div>
+
+<script src="portfolio/js/bootstrap.min.js"></script>
+<script>
+	$('#myModal').modal('hidden')
+</script>
 </body>
 </html>
