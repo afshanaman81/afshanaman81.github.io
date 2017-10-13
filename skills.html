@@ -26,13 +26,12 @@
 
     <div id="skillset" class="container skills topstyle">
         <h2>My Skills</h2>
-
         <!-- Template -->
         <!--
         <div class="row">
           <div class="span3">
             <div class="skill">
-              <h3>Node</h3>
+              <img src="portfolio/img/skills/css3.svg">
             </div>
           </div>
           <div class="span5">
@@ -49,18 +48,29 @@
   $('#myModal').modal('hidden')
 
     $(function(){
-    	var webDevSkills = []
-        var analysisSkills = []
-
-        var skillSet = [
-            ["JavaScript", 100, "#30a5dc"], ["JQuery", 85, "#ee742b"], ["CSS", 80, "#39d084"],
-            ["NodeJs", 85, "#f04949"]     , ["VueJs", 80, "purple"]  , ["SQL", 75, "orange"],
-            ["AWS", 70, "#cae565"], ["Android", 90, "grey"], ["Matlab", 80, "#F0788C"], ["STATA", 95, "#3C7896"]
+    	var webDevSkills = [
+		    ["JavaScript", 100, "#30a5dc", 'javascript.png'],
+		    ["JQuery", 90, "#ee742b", 'jquery.svg'],
+		    ["CSS3/Less", 80,"#cae565", 'css3.png'],
+		    ["NodeJs", 85, "#f04949", 'nodejs.png'],
+		    ["VueJs", 80, "#39d084" , 'vuejs.png'],
+		    ["PostGreSQL", 80, "orange", 'postgresql.png'],
+		    ["MongoDB", 80, "grey", 'mongodb.png'],
+		    ["GitHub", 80, "#3C7896", 'github1.svg'],
+		    ["AWS", 70,  "purple", 'aws.png'],
+		    ["Android", 90, "#a4c639", 'android.png']
         ]
+        var analysisSkills = [
+        	["Matlab", 80, "#F0788C"],
+	        ["STATA", 95, "#3C7896"]
+        ]
+
+        var skillSet = webDevSkills
         var proficiency     // "novice", "intermediate", "advanced", and "expert"
 
         for (i=0;i < skillSet.length; i++) {
             const skillName = skillSet[i][0]
+            const skillIcon = skillSet[i][3]
             const p = skillSet[i][1]
             if (p <= 40){
             	proficiency = "Novice"
@@ -81,10 +91,11 @@
             const skill = document.createElement("div")
             const expand = document.createElement("div")
 
-            const span3_h3 = document.createElement("h3")
+            const span3_img= document.createElement('img')
             const span5_h3 = document.createElement("h3")
 
-            skill.appendChild(span3_h3)
+
+            skill.appendChild(span3_img)
             span5.appendChild(span5_h3)
 
             span3.appendChild(skill)
@@ -101,8 +112,8 @@
             skill.classList.add("class", "skill")
             expand.classList.add("class", "expand-bg")
 
-            span3_h3.innerHTML = skillName
-            span5_h3.innerHTML = proficiency + "<span>" + skillSet[i][1] + "%</span>"
+            span3_img.src = 'portfolio/img/skills/' + skillIcon
+            span5_h3.innerHTML = skillName + " - " + proficiency + "<span>" + skillSet[i][1] + "%</span>"
             expand.innerHTML = "<span id=" + skillName + " class='expand'> </span>"
             const bar = document.getElementById(skillName)
 
