@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f1704c-fa4e-45f4-8c49-14e627698b52" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/helpers/project-descriptions.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/portfolio/img/projects/daily-quotes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/portfolio/img/projects/dashboard.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/portfolio/img/projects/favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/portfolio/img/projects/local-weather.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/portfolio/img/projects/random-wiki.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/portfolio/img/projects/roadmap.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio/img/skills/javascript.png" afterPath="$PROJECT_DIR$/portfolio/img/skills/javascript.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dailyquote/daily-quote.html" afterPath="$PROJECT_DIR$/dailyquote/daily-quote.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dailyquote/script.js" afterPath="$PROJECT_DIR$/dailyquote/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dailyquote/style.css" afterPath="$PROJECT_DIR$/dailyquote/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/localweather/weather.html" afterPath="$PROJECT_DIR$/localweather/weather.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio/css/style.css" afterPath="$PROJECT_DIR$/portfolio/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skills.html" afterPath="$PROJECT_DIR$/skills.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,8 +22,18 @@
       <file leaf-file-name="skills.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skills.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="58" column="53" lean-forward="false" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+            <state relative-caret-position="298">
+              <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portfolio/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="165" column="24" lean-forward="true" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -42,7 +43,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>left</find>
       <find>body</find>
       <find>top</find>
       <find>active</find>
@@ -72,6 +72,7 @@
       <find>para-details</find>
       <find>para-detailspara_details</find>
       <find>resume</find>
+      <find>span5</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,13 +124,13 @@
         <option value="$PROJECT_DIR$/portfolio/css/jquery.bxslider.css" />
         <option value="$PROJECT_DIR$/work.html" />
         <option value="$PROJECT_DIR$/dashboard-bootstrap/css/dashboard.css" />
-        <option value="$PROJECT_DIR$/portfolio/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/portfolio/helpers/project-descriptions.xml" />
         <option value="$PROJECT_DIR$/localweather/weather.html" />
         <option value="$PROJECT_DIR$/dailyquote/script.js" />
         <option value="$PROJECT_DIR$/dailyquote/daily-quote.html" />
         <option value="$PROJECT_DIR$/dailyquote/style.css" />
+        <option value="$PROJECT_DIR$/portfolio/css/style.css" />
         <option value="$PROJECT_DIR$/skills.html" />
       </list>
     </option>
@@ -181,6 +182,12 @@
               <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -391,12 +398,12 @@
       <workItem from="1506759580493" duration="833000" />
       <workItem from="1506959323730" duration="889000" />
       <workItem from="1506963372738" duration="4987000" />
-      <workItem from="1507882497886" duration="6114000" />
+      <workItem from="1507882497886" duration="7580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225754000" />
+    <option name="totallyTimeSpent" value="227220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1077" height="1017" extended-state="0" />
@@ -670,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5321">
-          <caret line="313" column="0" lean-forward="false" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../boilerplate-bs-jq-fa-g-fonts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -736,10 +736,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="165" column="24" lean-forward="true" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/skills.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="58" column="53" lean-forward="false" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+        <state relative-caret-position="298">
+          <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
           <folding />
         </state>
       </provider>

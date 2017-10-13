@@ -160,7 +160,8 @@ ul.social-icons li a:hover {
 	font-size: 18.5px;
 	line-height: 15px;
 	font-weight:normal;
-	text-transform:uppercase;
+	text-transform: capitalize;
+    font-family: "Bradley Hand ITC";
 }
 .skills .span5 h3 span {
 	float:right;
