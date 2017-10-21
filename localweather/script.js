@@ -22,6 +22,7 @@ $(function(){
         // get weather
         $.getJSON(weatherAPICall).done(function(data) {
             $('#spinner').hide();
+	        $('#warning').hide();
 
             //console.log(data);
             desc = data.weather[0].main;
