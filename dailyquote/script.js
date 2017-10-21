@@ -54,14 +54,6 @@ function getQuote() {
 					$('#author').html("- " + r.author);
 				});
 
-			/*var color = Math.floor(Math.random() * colors.length);
-			$("html body").animate({
-			  backgroundColor: colors[color],
-			  color: colors[color]
-			}, 1000);
-			$(".button").animate({
-			  backgroundColor: colors[color]
-			}, 1000);*/
 		}
 	});
 }
