@@ -17,14 +17,12 @@ $(function(){
         var units       = "&units=metric"
         var appid_param = "&APPID=f09e057a05dc58c17d7baca4f36ab8d5";
         var weatherAPICall = url + loc_param + units + appid_param;
-        //console.log(weatherAPICall)
 
         // get weather
         $.getJSON(weatherAPICall).done(function(data) {
             $('#spinner').hide();
 	        $('#warning').hide();
 
-            //console.log(data);
             desc = data.weather[0].main;
             humidity = data.main.humidity;
             temp_c = Math.round(data.main.temp);
