@@ -7,25 +7,18 @@
 </head>
 
 <body>
-<div id="outer">
-    <div id="card">
-        <div id="quote" class="text-center">
-
+<div class="outer-grid">
+    <div id="row1"></div>
+    <div id="row2" class="text-center">
+        <div class="inner-grid">
             <div id="quote-txt"></div>
-            <div class="quote-author">
-                <span id="author"></span>
+            <div id="quote-author"><span id="author"></span></div>
+            <div id="buttons">
+                <button id="new-quote" class="btn btn-default">New Quote</button>
             </div>
         </div>
-
-        <div id="buttons" >
-            <button id="tweet" class="btn btn-warning">
-                <i class="fa fa-twitter"></i>
-            </button>
-            <button id="new-quote" class="btn btn-warning">New Quote</button>
-        </div>
     </div>
-
-    <div id="outside-text">by Ash</div>
+    <div id="row3"></div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
