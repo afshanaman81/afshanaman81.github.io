@@ -7,7 +7,13 @@
 
 </head>
 <body>
-<div class="text-center font-white">
+
+<div id="warning">
+    (This site uses http protocol instead of https, so if the weather contents do not load,
+    please consider enabling 'loading unsafe contents')
+</div>
+
+<div id="box" class="text-center">
     <br><br><br>
     <h1> Free C<i class="wi wi-rain-wind"></i>de Camp </h1>
     <h1> Weather App </h1>
@@ -29,12 +35,8 @@
             <div id="thunderstorm" hidden><i class="wi wi-day-thunderstorm"></i></div>
         </div>
     </div>
-
-    <div id="warning">
-        (This site uses http protocol instead of https, so if the weather contents do not load,
-        please consider enabling 'loading unsafe contents')
-    </div>
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="script.js"></script>

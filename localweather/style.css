@@ -1,9 +1,31 @@
 body{
     background-color: #4e5556 !important;
+    background-image: url("sun.jpg"), url("rain.jpg"), url("snow.jpg");
+    background-size: cover;
 }
 
-.font-white{
+#box{
+    position: fixed;
+    top: 32vh;
+    left: 60vw;
+    width: 30vw;
+    padding-bottom: 5vh;
+    background: darkolivegreen;
+    opacity: .9;
     color: white;
+    border-radius: 3px;
+}
+
+#warning{
+    margin: 0 auto;
+    padding: 1vh;
+    background: grey;
+    font-style: italic;
+    text-align: center;
+    font-size: 12px;
+    opacity: .9;
+    color: white;
+    border-radius: 3px;
 }
 
 #icon{
@@ -25,4 +47,22 @@ body{
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    #box{
+        top: 22vh;
+        left: 50vw;
+        width: 40vw;
+        height: 70vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+    #box{
+        top: 10px;
+        left: 50vw;
+        width: 40vw;
+        height: 50vh;
+    }
 }

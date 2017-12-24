@@ -40,7 +40,7 @@ function getQuote() {
 						opacity: 1
 					}, 500);
 
-					// todo: user r.quote instead when the certificate is aquired
+					// todo: user r.quote instead, when the certificate is aquired
 					var quote = "When you realize you want to spend the rest of your life with somebody, " +
 						"you want the rest of your life to start as soon as possible."
 					var innerHTML = "<i class='fa fa-quote-left'></i>" + quote + "<i class='fa fa-quote-right'></i>";

@@ -2,6 +2,9 @@
 $(function(){
     var temp_f, temp_c, desc, humidity;
 
+    // choose a background image
+	randomBackground();
+
     // get location
     $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
         var city = "";
@@ -48,5 +51,11 @@ $(function(){
         $("#centi").on("click", toFah);
     }
 
+	function randomBackground(){
+    	var imgArray  = ["sun.jpg", "fog.jpg", "rain.jpg", "snow.jpg"]
+		var randomNum = Math.floor(Math.random() * 4)
+		var randomImg = imgArray[randomNum]
 
+		$("body").css('background-image', 'url(' + randomImg + ')')
+	}
 });
