@@ -10,7 +10,7 @@ body{
 .outer-grid{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 20vh 60vh 20vh;
+    grid-template-rows: 25vh 50vh 25vh;
 }
 
 #row2 {
@@ -20,7 +20,7 @@ body{
 
 .inner-grid{
     display: grid;
-    grid-template-rows: 40vh 10vh 10vh;
+    grid-template-rows: 30vh 10vh 10vh;
 
     background-color: grey;
     opacity: .8;
