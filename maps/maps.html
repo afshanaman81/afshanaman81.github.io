@@ -1,25 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Accessible Map</title>
-    <!--jQuery-->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Little Palantir</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
-    <script src="https://openlayers.org/en/v4.1.1/build/ol.js" type="text/javascript"></script>
-
     <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
-    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
-
     <link rel="stylesheet" href="maps.css" type="text/css">
-
-    <script src="exif.js"></script>
-
 </head>
 <body>
     <div id="top-nav"></div>
@@ -27,25 +14,32 @@
     <div id="image"></div>
     <div id="map" class="map" tabindex="0" hidden></div>
 
-    <div class="center">
-        <h2 class="color-pink">My Little Palantir!</h2>
+    <div id="welcome">
+        <h2 class="accent-color bold">My Little Palantir!</h2>
         <!--https://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3-->
         <p class="para1">If you happen to have some photos on your computer which were captured on a GPS
-            enabled device (such as your smart phone or tablet), you can visualize them on a map by choosing them using
-            the button below.
-            <br><br>PS: if an image doesnt have the GPS information, it will appear somewhere near Vilnius, Latvia!
+            enabled device, such as your smart phone or tablet, you can visualize them on a map.
+            <br><br>PS: If an image doesn't have the GPS information, it might appear somewhere else!
         </p>
         <br>
-        <p class="font-medium color-pink">
-            <i>(Disclaimer: Your photos never leave your computer. Its a client-side only script.)</i>
+        <p class="disclaimer bold accent-color">
+            <i>(Disclaimer: Your photos never leave your computer. They are totally private and safe.)</i>
         </p>
+
         <br><br>
-        <label class="btn btn-default btn-file bold">
-            Choose Images <input type="file" id="files" name="files[]" multiple style="display: none;">
-        </label>
+        <button id="button" class="btn btn-default btn-file bold">Ok, Lets do it!</button>
+        <input  id="files" type="file"  name="files[]" disabled multiple style="display: none;">
+
 
     </div>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://openlayers.org/en/v4.1.1/build/ol.js" type="text/javascript"></script>
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="exif.js"></script>
     <script src="maps.js"></script>
 </body>
 </html>

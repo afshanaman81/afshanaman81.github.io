@@ -1,6 +1,5 @@
 body{
     background-color: #4e5556 !important;
-    background-image: url("sun.jpg"), url("rain.jpg"), url("snow.jpg");
     background-size: cover;
 }
 
@@ -11,9 +10,9 @@ body{
     width: 30vw;
     padding-bottom: 5vh;
     background: darkolivegreen;
-    opacity: .9;
+    opacity: .8;
     color: white;
-    border-radius: 3px;
+    border-radius: 5%;
 }
 
 #warning{

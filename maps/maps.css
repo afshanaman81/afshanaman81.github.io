@@ -1,18 +1,21 @@
 body{
-    background: #cae565;
+    background: sandybrown;
+    background-image: url("background.jpg");
+    background-size: cover;
+    font-family: Garamond;
 }
 .map {
     position: fixed;
-    height: 99%;
-    width: 99%;
-    left: 6px;
-    top: 4px;
-    /*border: solid;
-    border-radius: 5px;*/
+    height: 67vh;
+    width: 68vw;
+    left: 99vw;
+    top: 30vh;
+
+    border: solid;
+    border-radius: 5px;
 }
 
 #map:focus {
-
     outline: #4A74A8 solid 0.15em;
 }
 
@@ -46,30 +49,29 @@ body{
     content: "x";
 }
 
-
-.center{
+#welcome{
     position: fixed;
+    padding: 50px 30px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5%;
+    opacity: .8;
+    background: sandybrown;
+
     width: 50%;
     left: 25%;
-    top: 10%;
-    padding: 70px 0;
-    text-align: center;
-}
-
-.centered{
-    margin:auto;
+    top: 15vh;
 }
 
 .para1 {
-    font-family: "Agency FB";
-    font-size: 30px;
+    font-size: 20px;
 }
-.font-medium {
-    font-size: medium;
+.disclaimer {
+    font-size: 22px;
 }
 
-.color-pink{
-    color: #F0788C;
+.accent-color {
+    color: brown;
 }
 
 .bold{

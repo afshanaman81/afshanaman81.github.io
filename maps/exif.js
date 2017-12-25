@@ -1,7 +1,6 @@
 (function() {
 
     var debug = false;
-
     var root = this;
 
     var EXIF = function(obj) {
