@@ -114,7 +114,7 @@ body{
 }
 
 /* iPad Pro (1024 x 1366) */
-@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
     #box{
         top: 30vh;
         left: 33vw;
@@ -132,7 +132,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 1024px)  and (max-width: 1400px) and (orientation: landscape){
+@media only screen and (min-width: 1025px)  and (max-width: 1400px) and (orientation: landscape){
     #box{
         top: 33vh;
         left: 45vw;
