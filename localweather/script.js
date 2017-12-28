@@ -32,7 +32,7 @@ $(function(){
             temp_f = Math.round( (temp_c * 9)/5 + 32 );
 
             $("#location").html("<h3> " + city + "</h3>" );
-            $("#temprature").html("<h3>" + temp_c + " &deg;<a id='centi'>C</a></h3>");
+            $("#temperature").html("<h3>" + temp_c + " &deg;<a id='centi'>C</a></h3>");
             $("#description").html("<h3>" + desc + "</h3>");
             $('#' + desc.toLowerCase()).show();
 
@@ -42,12 +42,12 @@ $(function(){
 
     });
     function toFah(){
-        $("#temprature").html("<h3>" + temp_f + " &deg;<a id='fah'>F</a></h3>")
+        $("#temperature").html("<h3>" + temp_f + " &deg;<a id='fah'>F</a></h3>")
         $("#fah").on("click", toCenti);
     }
 
     function toCenti(){
-        $("#temprature").html("<h3>" + temp_c + " &deg;<a id='centi'>C</a></h3>")
+        $("#temperature").html("<h3>" + temp_c + " &deg;<a id='centi'>C</a></h3>")
         $("#centi").on("click", toFah);
     }
 

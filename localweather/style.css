@@ -4,15 +4,19 @@ body{
 }
 
 #box{
-    position: fixed;
+    position: relative;
     top: 32vh;
     left: 60vw;
-    width: 30vw;
-    padding-bottom: 5vh;
+    width: 35vw;
+    padding: 5vh 0;
     background: darkolivegreen;
     opacity: .8;
     color: white;
     border-radius: 5%;
+}
+
+#weather{
+    padding-top: 5vh;
 }
 
 #warning{
@@ -48,20 +52,92 @@ body{
     100% { transform: rotate(360deg); }
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
+
+/*********** iPhones and SmartPhones ******************/
+@media only screen and (max-width: 740px) {
     #box{
-        top: 22vh;
-        left: 50vw;
-        width: 40vw;
-        height: 70vh;
+        /*background-color: red;*/
+        top: 35vh;
+        left: 35vw;
+        width: 60vw;
+        height: 45vh;
+        padding: 2vh 0;
+    }
+
+    h1,h2,h3,h4{
+        font-size: medium;
+        margin: 10px;
+    }
+
+    #icon{
+        font-size: 30px;
     }
 }
 
-@media (min-width: 320px) and (max-width: 640px) {
+@media only screen and (max-width: 740px) and (orientation: landscape) {
     #box{
-        top: 10px;
-        left: 50vw;
+        /*background-color: pink;*/
+        top: 22vh;
+        left: 55vw;
         width: 40vw;
+        height: 70vh;
+        padding: 2vh 0;
+    }
+}
+
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #box{
+        top: 30vh;
+        left: 33vw;
+        width: 60vw;
         height: 50vh;
+        padding: 4vh 0;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #box{
+        top: 30vh;
+        left: 55vw;
+        width: 40vw;
+        height: 60vh;
+        padding: 2vh 0;
+    }
+}
+
+/* iPad Pro (1024 x 1366) */
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+    #box{
+        top: 30vh;
+        left: 33vw;
+        width: 60vw;
+        height: 50vh;
+        padding: 4vh 0;
+    }
+
+    h1,h2,h3,h4{
+        font-size: 48px;
+    }
+
+    #icon{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 1024px)  and (max-width: 1400px) and (orientation: landscape){
+    #box{
+        top: 33vh;
+        left: 45vw;
+        width: 50vw;
+        height: 60vh;
+        padding: 4vh 0;
     }
 }
