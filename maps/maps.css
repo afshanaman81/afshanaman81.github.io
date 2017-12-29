@@ -64,6 +64,10 @@ body{
     top: 15vh;
 }
 
+#sorry{
+    display: none;
+}
+
 #buttons{
    margin-top: 3vh;
 }
