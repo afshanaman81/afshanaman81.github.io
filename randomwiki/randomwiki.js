@@ -10,7 +10,7 @@ $(function(){
 
 	// wiki search
 	// https://www.mediawiki.org/wiki/API:Main_page
-	//https://www.w3schools.com/jquery/ajax_get.asp
+	// https://www.w3schools.com/jquery/ajax_get.asp
 
 	$("#type-search").keypress(function(e){
 		var key = e.which;
