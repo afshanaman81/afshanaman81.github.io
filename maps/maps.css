@@ -2,6 +2,7 @@ body{
     background: sandybrown;
     background-image: url("background.jpg");
     background-size: cover;
+    /*background-repeat: no-repeat;*/
     font-family: Garamond;
 }
 .map {
@@ -63,6 +64,10 @@ body{
     top: 15vh;
 }
 
+#buttons{
+   margin-top: 3vh;
+}
+
 .para1 {
     font-size: 20px;
 }
@@ -76,4 +81,67 @@ body{
 
 .bold{
     font-weight:bold;
+}
+
+
+/*********** iPhones and SmartPhones ******************/
+@media only screen and (max-width: 740px) {
+    #welcome{
+        background-color: red;
+        top: 10vh;
+        left: 20vw;
+        width: 60vw;
+        height: 45vh;
+        padding: 2vh 2vw;
+    }
+    h2{
+        font-size: medium;
+    }
+
+    .para1 {
+        font-size: 14px;
+    }
+    .disclaimer {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 740px) and (orientation: landscape) {
+    #welcome{
+        background-color: pink;
+        top: 10vh;
+        left: 20vw;
+        width: 60vw;
+        height: 80vh;
+        padding: 2vh 1vw;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #welcome{
+        background-color: pink;
+        top: 10vh;
+        left: 20vw;
+        width: 60vw;
+        height: 50vh;
+        padding: 3vh 3vw;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #welcome{
+        background-color: pink;
+        top: 9vh;
+        left: 20vw;
+        width: 60vw;
+        height: 57vh;
+        padding: 3vh 3vw;
+    }
 }

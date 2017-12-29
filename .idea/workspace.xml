@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b9f1704c-fa4e-45f4-8c49-14e627698b52" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/randomwiki/randomwiki.js" afterPath="$PROJECT_DIR$/randomwiki/randomwiki.js" />
-      <change beforePath="$PROJECT_DIR$/work.html" afterPath="$PROJECT_DIR$/work.html" />
+      <change beforePath="$PROJECT_DIR$/maps/maps.css" afterPath="$PROJECT_DIR$/maps/maps.css" />
+      <change beforePath="$PROJECT_DIR$/maps/maps.html" afterPath="$PROJECT_DIR$/maps/maps.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +18,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="work.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/work.html">
+      <file leaf-file-name="maps.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/maps/maps.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="89" column="74" lean-forward="false" selection-start-line="89" selection-start-column="74" selection-end-line="89" selection-end-column="74" />
+            <state relative-caret-position="289">
+              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/localweather/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="113" column="1" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="113" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maps.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/maps/maps.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="140" column="14" lean-forward="false" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -112,15 +132,15 @@
         <option value="$PROJECT_DIR$/dailyquote/style.css" />
         <option value="$PROJECT_DIR$/portfolio/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/dailyquote/script.js" />
-        <option value="$PROJECT_DIR$/maps/maps.css" />
         <option value="$PROJECT_DIR$/maps/exif.js" />
-        <option value="$PROJECT_DIR$/maps/maps.html" />
         <option value="$PROJECT_DIR$/maps/maps.js" />
         <option value="$PROJECT_DIR$/localweather/script.js" />
         <option value="$PROJECT_DIR$/localweather/weather.html" />
         <option value="$PROJECT_DIR$/localweather/style.css" />
         <option value="$PROJECT_DIR$/work.html" />
         <option value="$PROJECT_DIR$/randomwiki/randomwiki.js" />
+        <option value="$PROJECT_DIR$/maps/maps.html" />
+        <option value="$PROJECT_DIR$/maps/maps.css" />
       </list>
     </option>
   </component>
@@ -137,9 +157,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-7" />
-    <option name="width" value="1429" />
+    <option name="width" value="928" />
     <option name="height" value="1017" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -171,17 +191,12 @@
             <path>
               <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="localweather" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-jquery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="randomwiki" type="462c0819:PsiDirectoryNode" />
+              <item name="maps" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -389,18 +404,18 @@
       <workItem from="1514144266789" duration="4290000" />
       <workItem from="1514181814835" duration="21588000" />
       <workItem from="1514360667004" duration="8653000" />
-      <workItem from="1514538439012" duration="488000" />
+      <workItem from="1514538439012" duration="2455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279733000" />
+    <option name="totallyTimeSpent" value="281700000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1429" height="1017" extended-state="0" />
+    <frame x="-7" y="0" width="928" height="1017" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15312725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23932584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -684,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maps/maps.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/maps/exif.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -705,33 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maps/maps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/localweather/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/localweather/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="123" column="5" lean-forward="false" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/localweather/weather.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,6 +758,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="89" column="74" lean-forward="false" selection-start-line="89" selection-start-column="74" selection-end-line="89" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/localweather/weather.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maps/maps.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="140" column="14" lean-forward="false" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maps/maps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/localweather/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="113" column="1" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="113" selection-end-column="1" />
           <folding />
         </state>
       </provider>
