@@ -50,17 +50,28 @@ $(function(){
 	}
 
 	function changeUI(){
-		var welcome = $("#welcome");
+		const welcome = $("#welcome");
 
-		$(".para1").animate({fontSize: '18px'});
-		$(".disclaimer").animate({fontSize: '16px'});
+		// media query for tablets and iPads (landscape orientation)
+		const mq = window.matchMedia( "(max-width: 740px)" );
+		if (mq.matches){
+			$(".para1").animate({fontSize: '11px'});
+			$(".disclaimer").animate({fontSize: '10px'});
+			$("#button").animate({fontSize: '10px'});
+
+			welcome.animate({height: '90vh', opacity: '0.2'}, "slow");
+		}else{
+			$(".para1").animate({fontSize: '18px'});
+			$(".disclaimer").animate({fontSize: '16px'});
+		}
+
 		$("#button").html("Choose Images")
 
 		welcome.animate({width: '26vw', opacity: '0.4'}, "slow");
-		welcome.animate({left: '30px', opacity: '0.6'}, "slow");
-		welcome.animate({top: '30px', opacity: '0.8'}, "slow");
+		welcome.animate({left: '2vw', opacity: '0.6'}, "slow");
+		welcome.animate({top: '3vh', opacity: '0.8'}, "slow");
 
-		var map = $("#map")
+		const map = $("#map")
 		map.show()
 		map.animate({left: '30vw'}, 2700)
 	}
