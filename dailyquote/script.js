@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	//getQuoteFromAndruxnet()
+	//getQuoteFromAndruxnet()       they need to update their SSL certificate!
+	// another source: http://forismatic.com/en
 
 	getQuoteFromQOD()
 
@@ -26,6 +27,8 @@ function getQuoteFromQOD(){
 	});
 
 }
+
+// Not working as of Dec 2017
 function getQuoteFromAndruxnet() {
 	$.ajax({
 		headers: {
