@@ -32,7 +32,7 @@ $(function(){
 	function callHttpsMethod(){
 		console.log("HTTPs method")
 		const httpsPreamble = "https://cors-anywhere.herokuapp.com/"
-		$.getJSON("https://ipapi.co/json/?callback=?", function(data) {
+		$.getJSON("https://ipapi.co/json/?jsoncallback=?", function(data) {
 			console.log(data)
 			/*$.each(data, function(k, v) {
 				console.log(k + ", " + v)
