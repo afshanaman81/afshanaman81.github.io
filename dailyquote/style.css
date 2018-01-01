@@ -31,6 +31,7 @@ body{
     max-width: 60vw;
     margin-left: 20vw;
     padding-top: 10vh;
+    text-align: left;
 }
 #quote-author{
     grid-row:2;
