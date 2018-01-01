@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f1704c-fa4e-45f4-8c49-14e627698b52" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/localweather/fog.jpg" afterPath="$PROJECT_DIR$/localweather/img/fog.jpg" />
-      <change beforePath="$PROJECT_DIR$/localweather/rain.jpg" afterPath="$PROJECT_DIR$/localweather/img/rain.jpg" />
       <change beforePath="$PROJECT_DIR$/localweather/script.js" afterPath="$PROJECT_DIR$/localweather/script.js" />
-      <change beforePath="$PROJECT_DIR$/localweather/snow.jpg" afterPath="$PROJECT_DIR$/localweather/img/snow.jpg" />
-      <change beforePath="$PROJECT_DIR$/localweather/sun.jpg" afterPath="$PROJECT_DIR$/localweather/img/sun.jpg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,12 +19,12 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/localweather/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="87" column="51" lean-forward="false" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
+            <state relative-caret-position="187">
+              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
               <folding>
-                <marker date="1514816266943" expanded="true" signature="1656:1661" ph="°" />
-                <marker date="1514816266943" expanded="true" signature="1879:1884" ph="°" />
-                <marker date="1514816266943" expanded="true" signature="2013:2018" ph="°" />
+                <marker date="1514817200138" expanded="true" signature="1766:1771" ph="°" />
+                <marker date="1514817200138" expanded="true" signature="1989:1994" ph="°" />
+                <marker date="1514817200138" expanded="true" signature="2123:2128" ph="°" />
               </folding>
             </state>
           </provider>
@@ -186,17 +181,6 @@
             <path>
               <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="localweather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="localweather" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -408,12 +392,12 @@
       <workItem from="1514654432709" duration="518000" />
       <workItem from="1514655018712" duration="1136000" />
       <workItem from="1514656722258" duration="1863000" />
-      <workItem from="1514812728708" duration="3433000" />
+      <workItem from="1514812728708" duration="4207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296162000" />
+    <option name="totallyTimeSpent" value="296936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="1" width="1544" height="1017" extended-state="0" />
@@ -789,12 +773,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/localweather/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="87" column="51" lean-forward="false" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
+        <state relative-caret-position="187">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
-            <marker date="1514816266943" expanded="true" signature="1656:1661" ph="°" />
-            <marker date="1514816266943" expanded="true" signature="1879:1884" ph="°" />
-            <marker date="1514816266943" expanded="true" signature="2013:2018" ph="°" />
+            <marker date="1514817200138" expanded="true" signature="1766:1771" ph="°" />
+            <marker date="1514817200138" expanded="true" signature="1989:1994" ph="°" />
+            <marker date="1514817200138" expanded="true" signature="2123:2128" ph="°" />
           </folding>
         </state>
       </provider>

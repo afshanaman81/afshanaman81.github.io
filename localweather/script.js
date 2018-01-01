@@ -4,12 +4,16 @@ $(function(){
 	// choose a background image
 	randomBackground()
 
-	// TODO: determine if its http or https
-	//callHttpsMethod()
-
-	callHttpMethod()
+	// determine if its http or https
+	if (window.location.protocol != "https:") {
+		callHttpMethod()
+	}
+	else{
+		callHttpsMethod()
+	}
 
 	function callHttpMethod(){
+		console.log("HTTP method")
 		$.getJSON("http://ip-api.com/json/?callback=?", function(data) {
 			$.each(data, function(k, v) {
 				console.log(k + ", " + v)
@@ -26,7 +30,7 @@ $(function(){
 	}
 
 	function callHttpsMethod(){
-
+		console.log("HTTPs method")
 		$.getJSON("https://crossorigin.me/http://ip-api.com/json/?callback=?", function(data) {
 			$.each(data, function(k, v) {
 				console.log(k + ", " + v)
@@ -55,7 +59,6 @@ $(function(){
 			temp_c = Math.round(data.main.temp);
 			temp_f = Math.round( (temp_c * 9)/5 + 32 );
 
-			// Update UI
 			updateUI()
 
 		});
