@@ -5,9 +5,9 @@ $(function(){
 	randomBackground()
 
 	// TODO: determine if its http or https
-	callHttpsMethod()
+	//callHttpsMethod()
 
-	//callHttpMethod()
+	callHttpMethod()
 
 	function callHttpMethod(){
 		$.getJSON("http://ip-api.com/json/?callback=?", function(data) {
@@ -36,7 +36,7 @@ $(function(){
 				}
 			});
 
-			var httpsURL     = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?"
+			var httpsURL    = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?"
 			var loc_param   = "q=" + city;
 			getWeather(httpsURL, loc_param)
 		});
@@ -85,6 +85,6 @@ $(function(){
 		var randomNum = Math.floor(Math.random() * 4)
 		var randomImg = imgArray[randomNum]
 
-		$("body").css('background-image', 'url(' + randomImg + ')')
+		$("body").css('background-image', 'url(img/' + randomImg + ')')
 	}
 });

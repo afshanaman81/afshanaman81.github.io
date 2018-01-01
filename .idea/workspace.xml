@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b9f1704c-fa4e-45f4-8c49-14e627698b52" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/localweather/fog.jpg" afterPath="$PROJECT_DIR$/localweather/img/fog.jpg" />
+      <change beforePath="$PROJECT_DIR$/localweather/rain.jpg" afterPath="$PROJECT_DIR$/localweather/img/rain.jpg" />
       <change beforePath="$PROJECT_DIR$/localweather/script.js" afterPath="$PROJECT_DIR$/localweather/script.js" />
+      <change beforePath="$PROJECT_DIR$/localweather/snow.jpg" afterPath="$PROJECT_DIR$/localweather/img/snow.jpg" />
+      <change beforePath="$PROJECT_DIR$/localweather/sun.jpg" afterPath="$PROJECT_DIR$/localweather/img/sun.jpg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,12 +24,12 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/localweather/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="408">
+              <caret line="87" column="51" lean-forward="false" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
               <folding>
-                <marker date="1514815904421" expanded="true" signature="1657:1662" ph="°" />
-                <marker date="1514815904421" expanded="true" signature="1880:1885" ph="°" />
-                <marker date="1514815904421" expanded="true" signature="2014:2019" ph="°" />
+                <marker date="1514816266943" expanded="true" signature="1656:1661" ph="°" />
+                <marker date="1514816266943" expanded="true" signature="1879:1884" ph="°" />
+                <marker date="1514816266943" expanded="true" signature="2013:2018" ph="°" />
               </folding>
             </state>
           </provider>
@@ -188,6 +192,12 @@
               <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="localweather" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="localweather" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -212,15 +222,16 @@
     <property name="node.js.selected.package.stylelint" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\MyDevProjects\Simple Webpages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\MyDevProjects\SimpleWebpages\afshanaman81.github.io" />
       <recent name="C:\MyDevProjects\SimpleWebpages\afshanaman81.github.io\portfolio\style" />
       <recent name="C:\MyDevProjects\SimpleWebpages\afshanaman81.github.io\" />
       <recent name="C:\MyDevProjects\SimpleWebpages\afshanaman81.github.io\portfolio" />
       <recent name="C:\MyDevProjects\SimpleWebpages\afshanaman81.github.io\portfolio\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MyDevProjects\SimpleWebpages\afshanaman81.github.io\localweather\img" />
+      <recent name="C:\MyDevProjects\Simple Webpages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -397,12 +408,12 @@
       <workItem from="1514654432709" duration="518000" />
       <workItem from="1514655018712" duration="1136000" />
       <workItem from="1514656722258" duration="1863000" />
-      <workItem from="1514812728708" duration="3078000" />
+      <workItem from="1514812728708" duration="3433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295807000" />
+    <option name="totallyTimeSpent" value="296162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="1" width="1544" height="1017" extended-state="0" />
@@ -763,7 +774,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/localweather/snow.jpg">
+    <entry file="file://$PROJECT_DIR$/localweather/img/snow.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -778,12 +789,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/localweather/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="408">
+          <caret line="87" column="51" lean-forward="false" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
           <folding>
-            <marker date="1514815904421" expanded="true" signature="1657:1662" ph="°" />
-            <marker date="1514815904421" expanded="true" signature="1880:1885" ph="°" />
-            <marker date="1514815904421" expanded="true" signature="2014:2019" ph="°" />
+            <marker date="1514816266943" expanded="true" signature="1656:1661" ph="°" />
+            <marker date="1514816266943" expanded="true" signature="1879:1884" ph="°" />
+            <marker date="1514816266943" expanded="true" signature="2013:2018" ph="°" />
           </folding>
         </state>
       </provider>
