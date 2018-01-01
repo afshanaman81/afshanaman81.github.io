@@ -24,31 +24,39 @@ $(function(){
 			});
 
 			var httpURL     = "http://api.openweathermap.org/data/2.5/weather?"
-			var loc_param   = "q=" + city;
+			var loc_param   = "q=" + city
 			getWeather(httpURL, loc_param)
 		});
 	}
 
 	function callHttpsMethod(){
 		console.log("HTTPs method")
-		const httpsPreamble = "https://cors-anywhere.herokuapp.com/"
-		$.getJSON("https://ipapi.co/json/?jsoncallback=?", function(data) {
-			console.log(data)
-			/*$.each(data, function(k, v) {
-				console.log(k + ", " + v)
-				if (k=== 'city'){
-					city = v
-					return false    // exit the loop
-				}
-			});*/
-
-			var httpsURL    = httpsPreamble + "http://api.openweathermap.org/data/2.5/weather?"
-			var loc_param   = "q=" + city;
-			getWeather(httpsURL, loc_param)
-		});
-
+		if ("geolocation" in navigator) {
+			var watchID = navigator.geolocation.watchPosition(function(position) {
+				getCity(position.coords.latitude, position.coords.longitude)
+			});
+		} else {
+			/* geolocation IS NOT available */
+		}
 	}
 
+	function getCity(lat, lng){
+		var latlng = new google.maps.LatLng(lat, lng)
+		var geocoder = new google.maps.Geocoder()
+		geocoder.geocode({'latLng': latlng}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				if (results[1]) {
+					city = results[1].address_components[1].long_name
+
+					var httpsURL    = "https://api.openweathermap.org/data/2.5/weather?"
+					var loc_param   = "q=" + city
+					getWeather(httpsURL, loc_param)
+				}
+			}
+		})
+
+
+	}
 	function getWeather(url, location){
 		var units       = "&units=metric"
 		var appid_param = "&APPID=f09e057a05dc58c17d7baca4f36ab8d5";
@@ -69,6 +77,7 @@ $(function(){
 	function updateUI(){
 		$('#spinner').hide();
 		$('#warning').hide();
+
 		$("#location").html("<h3> " + city + "</h3>" );
 		$("#temperature").html("<h3>" + temp_c + " &deg;<a id='centi'>C</a></h3>");
 		$("#description").html("<h3>" + desc + "</h3>");
