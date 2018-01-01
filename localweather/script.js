@@ -5,11 +5,11 @@ $(function(){
 	randomBackground()
 
 	// determine if its http or https
-	if (window.location.protocol != "https:") {
-		callHttpMethod()
+	if (window.location.protocol == "https:") {
+		callHttpsMethod()
 	}
 	else{
-		callHttpsMethod()
+		callHttpMethod()
 	}
 
 	function callHttpMethod(){
@@ -31,7 +31,8 @@ $(function(){
 
 	function callHttpsMethod(){
 		console.log("HTTPs method")
-		$.getJSON("https://crossorigin.me/http://ip-api.com/json/?callback=?", function(data) {
+		const httpsPreamble = "https://cors-anywhere.herokuapp.com/"
+		$.getJSON(httpsPreamble + "http://ip-api.com/json/?callback=?", function(data) {
 			$.each(data, function(k, v) {
 				console.log(k + ", " + v)
 				if (k=== 'city'){
@@ -40,7 +41,7 @@ $(function(){
 				}
 			});
 
-			var httpsURL    = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?"
+			var httpsURL    = httpsPreamble + "http://api.openweathermap.org/data/2.5/weather?"
 			var loc_param   = "q=" + city;
 			getWeather(httpsURL, loc_param)
 		});
