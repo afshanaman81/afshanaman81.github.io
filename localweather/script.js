@@ -33,13 +33,14 @@ $(function(){
 		console.log("HTTPs method")
 		const httpsPreamble = "https://cors-anywhere.herokuapp.com/"
 		$.getJSON("https://ipapi.co/json/?callback=?", function(data) {
-			$.each(data, function(k, v) {
+			console.log(data)
+			/*$.each(data, function(k, v) {
 				console.log(k + ", " + v)
 				if (k=== 'city'){
 					city = v
 					return false    // exit the loop
 				}
-			});
+			});*/
 
 			var httpsURL    = httpsPreamble + "http://api.openweathermap.org/data/2.5/weather?"
 			var loc_param   = "q=" + city;
