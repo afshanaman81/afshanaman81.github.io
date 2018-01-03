@@ -3,29 +3,29 @@ body{
 }
 .wiki{
     position: relative;
-    left: 35%;
-    top: 35%;
-    width: 30%;
-    height: 20%;
+    margin: 0 auto;
+    top: 35vh;
+    width: 40vw;
+    height: 30vh;
     color: white;
     text-align: center;
     font-family:courier;
 }
 .wiki-top{
     position: relative;
-    left: 35%;
-    top: 3%;
-    width: 30%;
-    height: 20%;
+    margin: 0 auto;
+    top: 2vh;
+    width: 60vw;
+    height: 10vh;
     color: white;
     text-align: center;
     font-family:courier;
 }
 #wiki-results{
     position: relative;
-    left: 5%;
-    top: 2%;
-    width: 90%;
+    left: 5vw;
+    top: 8vh;
+    width: 90vw;
     color: white;
     text-align: left;
 }
@@ -44,14 +44,21 @@ body{
 }
 
 #wiki-a{
-    color: white;
+    /*color: white;*/
     text-decoration: none;
 }
 
 #search-box{
-    margin-top: 20px;
+    position: relative;
+    margin: 4vh auto;
+    height: 10vh;
     text-align: center;
 }
+.search-box-top{
+    margin-top: 2vh !important;
+    height: 5vh !important;
+}
+
 #search-btn{
     font-size:50px;
 }
@@ -78,6 +85,33 @@ input[type=search] {
 
 
 }
-#search-msg{
-    margin-top: 30px;
+
+@media only screen and (max-width: 740px) {
+    .wiki{
+        top: 30vh;
+        width: 80vw;
+    }
+    .wiki-top{
+        width: 90vw;
+        height: 30vh;
+    }
+    #wiki-results{
+        top: 5vh;
+    }
+
+}
+
+@media only screen and (max-width: 740px) and (orientation: landscape) {
+    .wiki{
+        top: 23vh;
+        width: 80vw;
+        height: 50vh;
+    }
+    #search-box{
+        margin: 13vh auto;
+    }
+    #wiki-results{
+        top: 5vh;
+    }
+
 }

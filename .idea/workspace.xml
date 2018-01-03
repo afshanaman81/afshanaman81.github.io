@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f1704c-fa4e-45f4-8c49-14e627698b52" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dailyquote/script.js" afterPath="$PROJECT_DIR$/dailyquote/script.js" />
-      <change beforePath="$PROJECT_DIR$/localweather/weather.html" afterPath="$PROJECT_DIR$/localweather/weather.html" />
+      <change beforePath="$PROJECT_DIR$/randomwiki/randomwiki.css" afterPath="$PROJECT_DIR$/randomwiki/randomwiki.css" />
+      <change beforePath="$PROJECT_DIR$/randomwiki/randomwiki.html" afterPath="$PROJECT_DIR$/randomwiki/randomwiki.html" />
+      <change beforePath="$PROJECT_DIR$/randomwiki/randomwiki.js" afterPath="$PROJECT_DIR$/randomwiki/randomwiki.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +18,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="weather.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/localweather/weather.html">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/localweather/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="141">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="randomwiki.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/randomwiki/randomwiki.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="randomwiki.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/randomwiki/randomwiki.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="randomwiki.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/randomwiki/randomwiki.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -32,11 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>skillset</find>
-      <find>free</find>
-      <find>spinner</find>
-      <find>https</find>
-      <find>andruxnet</find>
       <find>author</find>
       <find>myModal</find>
       <find>contact me</find>
@@ -62,6 +87,11 @@
       <find>radius</find>
       <find>warning</find>
       <find>project</find>
+      <find>wiki-top</find>
+      <find>search-box</find>
+      <find>search-msg</find>
+      <find>wiki-search</find>
+      <find>border</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,8 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/randomWiki/style.css" />
-        <option value="$PROJECT_DIR$/randomWiki/randomwiki.js" />
         <option value="$PROJECT_DIR$/randomWiki/randomwiki.html" />
         <option value="$PROJECT_DIR$/angularjs/angular-app.html" />
         <option value="$PROJECT_DIR$/angularjs/cal_temp2.html" />
@@ -111,7 +139,6 @@
         <option value="$PROJECT_DIR$/dailyquote/daily-quote.html" />
         <option value="$PROJECT_DIR$/portfolio/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/maps/exif.js" />
-        <option value="$PROJECT_DIR$/randomwiki/randomwiki.js" />
         <option value="$PROJECT_DIR$/maps/maps.js" />
         <option value="$PROJECT_DIR$/work.html" />
         <option value="$PROJECT_DIR$/maps/maps.html" />
@@ -121,6 +148,9 @@
         <option value="$PROJECT_DIR$/dailyquote/style.css" />
         <option value="$PROJECT_DIR$/dailyquote/script.js" />
         <option value="$PROJECT_DIR$/localweather/weather.html" />
+        <option value="$PROJECT_DIR$/randomwiki/randomwiki.html" />
+        <option value="$PROJECT_DIR$/randomwiki/randomwiki.js" />
+        <option value="$PROJECT_DIR$/randomwiki/randomwiki.css" />
       </list>
     </option>
   </component>
@@ -138,8 +168,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1218" />
+    <option name="x" value="-5" />
+    <option name="width" value="854" />
     <option name="height" value="1017" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -172,18 +202,7 @@
             <path>
               <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="localweather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="afshanaman81.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="afshanaman81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+              <item name="randomwiki" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -395,25 +414,25 @@
       <workItem from="1514654432709" duration="518000" />
       <workItem from="1514655018712" duration="1136000" />
       <workItem from="1514656722258" duration="1863000" />
-      <workItem from="1514812728708" duration="11827000" />
+      <workItem from="1514812728708" duration="15413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304556000" />
+    <option name="totallyTimeSpent" value="308142000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1218" height="1017" extended-state="0" />
+    <frame x="-5" y="0" width="854" height="1017" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24067797" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3480392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32768363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30282485" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30282485" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -434,7 +453,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32768363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30282485" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24067797" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3480392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -461,9 +480,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/calendar-angular/modal-template.html" />
-    <entry file="file://$PROJECT_DIR$/calendar-angular/angular-ui-modal.js" />
-    <entry file="file://$PROJECT_DIR$/calendar-angular/calendar-template.html" />
     <entry file="file://$PROJECT_DIR$/calendar-angular/calendar.html" />
     <entry file="file://$PROJECT_DIR$/calendar-angular/calendar.css" />
     <entry file="file://$PROJECT_DIR$/portfolio/js/jquery.bxslider.min.js" />
@@ -668,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/randomwiki/randomwiki.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard-jquery/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -731,14 +740,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/localweather/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="51" column="19" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dailyquote/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -785,8 +786,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/localweather/weather.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/localweather/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="396" column="22" lean-forward="false" selection-start-line="396" selection-start-column="22" selection-end-line="396" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/randomwiki/randomwiki.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/randomwiki/randomwiki.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/randomwiki/randomwiki.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding />
         </state>
       </provider>

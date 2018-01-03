@@ -3,6 +3,7 @@ $(function(){
 		// hide the search button
 		$(this).hide();
 		// show the search-text
+
 		$("#type-search").show({ effect: "scale"});
 		$("#type-search").focus();
 
@@ -29,6 +30,7 @@ $(function(){
 					// move the search area to the top
 					$('#wiki-search').removeClass('wiki')
 					$('#wiki-search').addClass('wiki-top')
+					$('#search-box').addClass('search-box-top')
 					$('#search-msg').html(N + " Results returned for your search term '" + searchTxt + "'")
 
 					// display results

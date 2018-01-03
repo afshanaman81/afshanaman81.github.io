@@ -1,8 +1,10 @@
 <html>
 <head>
+    <title>Random Wikipedia Entry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="randomwiki.css">
-    <title>Random Wikipedia Entry</title>
 </head>
 <body>
     <div id="wiki-search" class="wiki">
@@ -11,13 +13,14 @@
                 Click here for a random Wikipedia article
             </a>
         </div>
+
         <div id="search-box">
             <i id="search-btn" class="fa fa-search"></i>
             <div id="search-text">
                 <input id="type-search" type="search" placeholder="Search here..." hidden>
             </div>
         </div>
-        <div id="search-msg">(Click <i class="fa fa-search"></i> to search for a specific topic)</div>
+        <div id="search-msg">(Or Click <i class="fa fa-search"></i> to search for a specific topic)</div>
     </div>
 
     <div id="wiki-results" hidden></div>
