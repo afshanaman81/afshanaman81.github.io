@@ -30,6 +30,7 @@ $(function(){
 					// move the search area to the top
 					$('#wiki-search').removeClass('wiki')
 					$('#wiki-search').addClass('wiki-top')
+					$('#search-box').removeClass('search-box')
 					$('#search-box').addClass('search-box-top')
 					$('#search-msg').html(N + " Results returned for your search term '" + searchTxt + "'")
 

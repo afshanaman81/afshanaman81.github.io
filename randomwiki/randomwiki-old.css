@@ -9,13 +9,14 @@ body{
     color: white;
     text-align: center;
     font-family:courier;
+    border: 1px solid;
 }
 .wiki-top{
     position: relative;
     margin: 0 auto;
     top: 2vh;
     width: 60vw;
-    height: 12vh;
+    height: 10vh;
     color: white;
     text-align: center;
     font-family:courier;
@@ -33,6 +34,8 @@ body{
 }
 .wiki-title{
     color: black;
+    /*margin: 1px 0px;
+    border-bottom: 1px solid black;*/
 }
 .wiki-footer{
     width: 400px;
@@ -48,31 +51,33 @@ body{
 }
 
 .search-box{
-    position: relative;
     margin: 6vh auto 2vh auto;
     height: 10vh;
+    border: 1px solid;
+    text-align: center;
+    border: 1px solid;
 }
 .search-box-top{
-    margin-top: 2vh ;
-    height: 5vh;
+    margin-top: 2vh !important;
+    height: 5vh !important;
 }
 
 #search-btn{
     font-size:50px;
 }
-.search-text{
+#search-text{
+    position: relative;
     height: 35px;
-    margin-left:auto;
-    margin-right:auto;
-    width: 20vw;
+    width: 100%;
+    left: 25%;
 }
 
 input[type=search] {
     color: red;
     background-color: transparent;
-    /*text-align: left;*/
+    text-align: left;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
     height: 35px;
     float: left;
     padding-left: 20px;
@@ -81,6 +86,8 @@ input[type=search] {
     word-spacing: 20px;
     border: solid darkblue;
     border-radius: 30px;
+
+
 }
 
 /*********** iPhones and SmartPhones ******************/
@@ -92,17 +99,20 @@ input[type=search] {
     .wiki-top{
         width: 90vw;
         height: 25vh;
+        border: 1px solid;
     }
     .search-box{
-        margin: 8vh auto 2vh auto;
-        height: 8vh;
+        margin: 8vh auto 4vh auto;
+        height: 20vh;
     }
     .search-box-top{
-        margin: 3vh auto;
-        height: 5vh;
+        height: 2vh ;
     }
-    .search-text{
-        width: 70vw;
+    #search-text{
+        left: 10%;
+    }
+    input[type=search] {
+        width: 80%;
     }
     #wiki-results{
         top: 5vh;
@@ -113,21 +123,26 @@ input[type=search] {
 @media only screen and (max-width: 740px) and (orientation: landscape) {
     .wiki{
         top: 23vh;
+        width: 80vw;
     }
     .wiki-top{
-        height: 30vh;
+        width: 90vw;
+        height: 35vh;
+
     }
     .search-box{
-        margin: 10vh auto 2vh auto;
-        height: 15vh;
+        margin: 14vh auto 6vh auto;
+        height: 25vh;
+        border: 1px solid;
     }
     .search-box-top{
-        margin: 4vh auto;
-        height: 10vh;
+        height: 2vh ;
     }
-    .search-text{
-        width: 50vw;
-        height: auto;
+    #search-text{
+        left: 20%;
+    }
+    input[type=search] {
+        width: 60%;
     }
     #wiki-results{
         top: 5vh;
@@ -140,79 +155,40 @@ input[type=search] {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .wiki{
         top: 30vh;
-        width: 80vw;
+        width: 70vw;
+        font-size: larger;
     }
     .wiki-top{
         width: 90vw;
-        height: 15vh;
+        height: 10vh;
+        border: 1px solid;
     }
     .search-box{
-        margin: 7vh auto 1vh auto;
-        height: 6vh;
+        margin: 10vh auto 6vh auto;
     }
     .search-box-top{
-        margin: 2vh auto;
-        height: 5vh;
-    }
-    .search-text{
-        width: 60vw;
+        height: 2vh ;
     }
     #wiki-results{
-        top: 5vh;
-    }
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
-    .wiki{
-        top: 30vh;
-        width: 80vw;
-    }
-    .wiki-top{
-        width: 90vw;
-        height: 15vh;
-    }
-    .search-box{
-        margin: 8vh auto 2vh auto;
-        height: 8vh;
-    }
-    .search-box-top{
-        margin: 2vh auto;
-        height: 5vh;
-    }
-    .search-text{
-        width: 40vw;
-    }
-    #wiki-results{
-        top: 5vh;
+        top: 10vh;
     }
 
 }
 
 /* iPad Pro (1024 x 1366) */
-/*
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
     .wiki{
         top: 30vh;
-        width: 80vw;
+        width: 70vw;
+        height: 30vh;
+        font-size: x-large;
     }
     .wiki-top{
         width: 90vw;
-        height: 10vh;
-        border: 1px solid yellow;
+        height: 15vh;
     }
     .search-box{
-        margin: 8vh auto 4vh auto;
-        height: 20vh;
-        border: 1px solid;
-    }
-    .search-box-top{
-        margin: 2vh auto;
-        height: 5vh;
-        border: 1px solid;
-    }
-    .search-text{
-        width: 60vw;
+        margin: 10vh auto 6vh auto;
     }
     #wiki-results{
         top: 5vh;
@@ -226,4 +202,4 @@ input[type=search] {
         height: 30vh;
         font-size: x-large;
     }
-}*/
+}
