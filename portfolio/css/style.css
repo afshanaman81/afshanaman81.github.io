@@ -327,6 +327,7 @@ ul.work-images li img:hover {
 	width: 100%;
 	bottom:0;
 	height: 110px;
+    z-index: 9000;
 }
 .footer p {
 	margin:20px 0;
