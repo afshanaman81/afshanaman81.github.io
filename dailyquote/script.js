@@ -27,11 +27,10 @@ $(document).ready(function(){
 			},
 			cache: false
 		});
-
 	}
 
 	function displayQuote(result){
-		// media query for tablets and iPads (landscape orientation)
+		// TODO: media query for tablets and iPads (landscape orientation)
 		// const mq = window.matchMedia( "(max-width: 740px)" );
 		// if (mq.matches){}
 

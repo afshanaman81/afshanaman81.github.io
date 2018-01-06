@@ -51,16 +51,30 @@ $(function(){
 
 	function changeUI(){
 		const welcome = $("#welcome");
+		const map = $("#map")
 
-		// media query for tablets and iPads (landscape orientation)
-		const mq = window.matchMedia( "(max-width: 740px)" );
-		if (mq.matches){
+		// media query for iPhones and SmartPhones
+		if (window.matchMedia( "(max-width: 740px)" ).matches){
+			console.log("On smartphones")
 			$(".para1").animate({fontSize: '11px'});
 			$(".disclaimer").animate({fontSize: '10px'});
 			$("#button").animate({fontSize: '10px'});
 
 			welcome.animate({height: '90vh', opacity: '0.2'}, "slow");
-		}else{
+
+		}// media query for tablets and iPads (landscape orientation)
+		else if (window.matchMedia( "(max-width: 1024px)" ).matches){
+			console.log("On Tablets")
+			$(".para1").animate({fontSize: '17px'});
+			$(".disclaimer").animate({fontSize: '16px'});
+			$("#button").animate({fontSize: '15px'});
+
+			welcome.animate({height: '75vh', opacity: '0.2'}, "slow");
+			map.animate({top: '25vh'}, "fast")
+
+		}// big screens
+		else{
+			console.log("on desktop")
 			$(".para1").animate({fontSize: '18px'});
 			$(".disclaimer").animate({fontSize: '16px'});
 		}
@@ -71,7 +85,6 @@ $(function(){
 		welcome.animate({left: '2vw', opacity: '0.6'}, "slow");
 		welcome.animate({top: '3vh', opacity: '0.8'}, "slow");
 
-		const map = $("#map")
 		map.show()
 		map.animate({left: '30vw'}, 2700)
 	}
