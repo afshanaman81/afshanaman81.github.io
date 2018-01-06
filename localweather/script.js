@@ -9,7 +9,7 @@ $(function(){
 		callHttpsMethod()
 	}
 	else{
-		callHttpMethod()
+		callHttpsMethod()
 	}
 
 	function callHttpMethod(){
@@ -32,9 +32,16 @@ $(function(){
 	function callHttpsMethod(){
 		console.log("HTTPs method")
 		if ("geolocation" in navigator) {
-			var watchID = navigator.geolocation.watchPosition(function(position) {
-				getCity(position.coords.latitude, position.coords.longitude)
-			},{timeout: 10000, enableHighAccuracy: false});
+			var watchID = navigator.geolocation.watchPosition(
+				function(position) {
+					// success
+					getCity(position.coords.latitude, position.coords.longitude)
+				},
+				function(){
+					// error
+				},
+				{timeout: 10000, enableHighAccuracy: false} // options
+			);
 		} else {
 			/* geolocation IS NOT available */
 		}
