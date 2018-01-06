@@ -16,7 +16,7 @@ $(function(){
 		console.log("HTTP method")
 		$.getJSON("http://ip-api.com/json/?callback=?", function(data) {
 			$.each(data, function(k, v) {
-				console.log(k + ", " + v)
+				//console.log(k + ", " + v)
 				if (k=== 'city'){
 					city = v
 					return false    // exit the loop
@@ -34,7 +34,7 @@ $(function(){
 		if ("geolocation" in navigator) {
 			var watchID = navigator.geolocation.watchPosition(function(position) {
 				getCity(position.coords.latitude, position.coords.longitude)
-			});
+			},{timeout: 10000, enableHighAccuracy: false});
 		} else {
 			/* geolocation IS NOT available */
 		}
