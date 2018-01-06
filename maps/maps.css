@@ -4,6 +4,8 @@ body{
     /*needed for background image to not repeat on mobile phones*/
     background: url("background.jpg") sandybrown no-repeat center center fixed;
 
+    background-size: contain;
+    background-position: center;
 
     /*-webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -11,10 +13,10 @@ body{
     background-size: 100%;*/
 
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
 
     /*background-size: contain;*/
 
