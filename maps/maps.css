@@ -2,12 +2,14 @@ body{
     font-family: Garamond;
 
     /*needed for background image to not repeat on mobile phones*/
-    background: url("background.jpg") sandybrown no-repeat center center fixed;
+    background: url("background.jpg") sandybrown no-repeat 50% 0 fixed;
 
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
+    margin: 0 auto;
+
+    /*-webkit-background-size: 100% auto;*/
+    /*-moz-background-size: 100% auto;*/
+    /*-o-background-size: 100% auto;*/
+    /*background-size: 100% auto;*/
 
 
     /*-webkit-background-size: cover;*/
