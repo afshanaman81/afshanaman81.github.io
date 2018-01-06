@@ -9,7 +9,7 @@ $(function(){
 		callHttpsMethod()
 	}
 	else{
-		callHttpsMethod()
+		callHttpMethod()
 	}
 
 	function callHttpMethod(){
