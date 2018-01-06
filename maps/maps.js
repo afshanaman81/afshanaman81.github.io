@@ -70,7 +70,7 @@ $(function(){
 			$("#button").animate({fontSize: '15px'});
 
 			welcome.animate({height: '75vh', opacity: '0.2'}, "slow");
-			map.animate({top: '25vh'}, "fast")
+			map.animate({top: '23vh'}, "fast")
 
 		}// big screens
 		else{
