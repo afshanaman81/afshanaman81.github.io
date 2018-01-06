@@ -3,14 +3,13 @@ body{
 
     /*needed for background image to not repeat on mobile phones*/
     background: url("background.jpg") sandybrown no-repeat 50% 0 fixed;
-
     margin: 0 auto;
 
-    /*-webkit-background-size: 100% auto;*/
-    /*-moz-background-size: 100% auto;*/
-    /*-o-background-size: 100% auto;*/
-    /*background-size: 100% auto;*/
-
+    /* the following works on some devices, but not on the android tab*/
+    /*-webkit-background-size: 100%;*/
+    /*-moz-background-size: 100%;*/
+    /*-o-background-size: 100%;*/
+    /*background-size: 100%;*/
 
     /*-webkit-background-size: cover;*/
     /*-moz-background-size: cover;*/
@@ -18,7 +17,6 @@ body{
     /*background-size: cover;*/
 
     /*background-size: contain;*/
-
 }
 .map {
     position: fixed;
