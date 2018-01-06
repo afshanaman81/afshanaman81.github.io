@@ -20,7 +20,6 @@ $(document).ready(function(){
 				var content = post.content
 				// remove the <p> and </p>
 				var quote = content.substr(3, content.length -8)
-				console.log(quote.length)
 				var result = {quote: quote, author: post.title}
 
 				// resolve length of the quote to display depending on the screen size
