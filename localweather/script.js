@@ -31,21 +31,25 @@ $(function(){
 
 	function callHttpsMethod(){
 		console.log("HTTPs method")
-		if ("geolocation" in navigator) {
-			var watchID = navigator.geolocation.watchPosition(
-				function(position) {
-					// success
-					getCity(position.coords.latitude, position.coords.longitude)
-				},
-				function(){
-					// error
-				},
-				{timeout: 10000, enableHighAccuracy: false} // options
-			);
+		var options = { enableHighAccuracy: false, maximumAge: 100, timeout: 60000 };
+		if (navigator.geolocation) {
+			var watchID = navigator.geolocation.watchPosition(gotPosition, gotError, options)
+			var timeout = setTimeout( function() {
+				navigator.geolocation.clearWatch( watchID );
+			}, 5000 );
+
 		} else {
 			/* geolocation IS NOT available */
 			callHttpMethod()
 		}
+	}
+
+	function gotPosition(position) {
+		// success
+		getCity(position.coords.latitude, position.coords.longitude)
+	}
+	function gotError(){
+		// error
 	}
 
 	function getCity(lat, lng){

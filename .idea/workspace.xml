@@ -30,12 +30,12 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/localweather/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="42" column="69" lean-forward="false" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+            <state relative-caret-position="170">
+              <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
               <folding>
-                <marker date="1515259003898" expanded="true" signature="2183:2188" ph="°" />
-                <marker date="1515259003898" expanded="true" signature="2406:2411" ph="°" />
-                <marker date="1515259003898" expanded="true" signature="2540:2545" ph="°" />
+                <marker date="1515259681102" expanded="true" signature="2247:2252" ph="°" />
+                <marker date="1515259681102" expanded="true" signature="2470:2475" ph="°" />
+                <marker date="1515259681102" expanded="true" signature="2604:2609" ph="°" />
               </folding>
             </state>
           </provider>
@@ -172,7 +172,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1266" />
+    <option name="width" value="854" />
     <option name="height" value="1017" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -439,24 +439,25 @@
       <workItem from="1515014325401" duration="6849000" />
       <workItem from="1515084595297" duration="403000" />
       <workItem from="1515158279736" duration="1098000" />
-      <workItem from="1515258437365" duration="589000" />
+      <workItem from="1515258437365" duration="1243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324209000" />
+    <option name="totallyTimeSpent" value="324863000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1266" height="1017" extended-state="0" />
+    <frame x="-7" y="0" width="854" height="1017" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28908795" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28908795" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32768363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30282485" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30282485" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -858,12 +859,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/localweather/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="42" column="69" lean-forward="false" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+        <state relative-caret-position="170">
+          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding>
-            <marker date="1515259003898" expanded="true" signature="2183:2188" ph="°" />
-            <marker date="1515259003898" expanded="true" signature="2406:2411" ph="°" />
-            <marker date="1515259003898" expanded="true" signature="2540:2545" ph="°" />
+            <marker date="1515259681102" expanded="true" signature="2247:2252" ph="°" />
+            <marker date="1515259681102" expanded="true" signature="2470:2475" ph="°" />
+            <marker date="1515259681102" expanded="true" signature="2604:2609" ph="°" />
           </folding>
         </state>
       </provider>
