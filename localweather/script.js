@@ -44,6 +44,7 @@ $(function(){
 			);
 		} else {
 			/* geolocation IS NOT available */
+			callHttpMethod()
 		}
 	}
 
