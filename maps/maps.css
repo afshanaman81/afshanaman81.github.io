@@ -1,6 +1,8 @@
 body{
     font-family: Garamond;
     position: static;
+    background-size: 100% 100%;
+
     /*needed for background image to not repeat on mobile phones*/
     background: url("background.jpg") sandybrown no-repeat center center fixed;
     -webkit-background-size: 100%;
