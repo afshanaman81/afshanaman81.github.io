@@ -61,7 +61,7 @@ $(function(){
 					city = results[1].address_components[1].long_name
 
 					var httpsURL    = "https://api.openweathermap.org/data/2.5/weather?"
-					var loc_param   = "q=" + city
+					var loc_param   = "lat=" + lat + "&lon=" + lon
 					getWeather(httpsURL, loc_param)
 				}
 			}

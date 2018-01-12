@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f1704c-fa4e-45f4-8c49-14e627698b52" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/localweather/style.css" afterPath="$PROJECT_DIR$/localweather/style.css" />
-      <change beforePath="$PROJECT_DIR$/localweather/weather.html" afterPath="$PROJECT_DIR$/localweather/weather.html" />
+      <change beforePath="$PROJECT_DIR$/localweather/script.js" afterPath="$PROJECT_DIR$/localweather/script.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/localweather/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="97">
@@ -38,15 +36,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/localweather/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="90" column="19" lean-forward="false" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="19" />
+            <state relative-caret-position="324">
+              <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
               <folding>
-                <marker date="1515259721592" expanded="true" signature="2348:2353" ph="°" />
-                <marker date="1515259721592" expanded="true" signature="2571:2576" ph="°" />
-                <marker date="1515259721592" expanded="true" signature="2705:2710" ph="°" />
+                <marker date="1515748080331" expanded="true" signature="2365:2370" ph="°" />
+                <marker date="1515748080331" expanded="true" signature="2588:2593" ph="°" />
+                <marker date="1515748080331" expanded="true" signature="2722:2727" ph="°" />
               </folding>
             </state>
           </provider>
@@ -139,12 +137,12 @@
         <option value="$PROJECT_DIR$/portfolio/includes/header.html" />
         <option value="$PROJECT_DIR$/portfolio/includes/footer.html" />
         <option value="$PROJECT_DIR$/portfolio/css/style.css" />
-        <option value="$PROJECT_DIR$/localweather/script.js" />
         <option value="$PROJECT_DIR$/dailyquote/script.js" />
         <option value="$PROJECT_DIR$/maps/maps.css" />
         <option value="$PROJECT_DIR$/maps/maps.js" />
         <option value="$PROJECT_DIR$/localweather/weather.html" />
         <option value="$PROJECT_DIR$/localweather/style.css" />
+        <option value="$PROJECT_DIR$/localweather/script.js" />
       </list>
     </option>
   </component>
@@ -163,7 +161,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1038" />
+    <option name="width" value="1219" />
     <option name="height" value="1017" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -431,18 +429,18 @@
       <workItem from="1515084595297" duration="403000" />
       <workItem from="1515158279736" duration="1098000" />
       <workItem from="1515258437365" duration="5745000" />
-      <workItem from="1515747163997" duration="694000" />
+      <workItem from="1515747163997" duration="911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330059000" />
+    <option name="totallyTimeSpent" value="330276000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1038" height="1017" extended-state="0" />
+    <frame x="-7" y="0" width="1219" height="1017" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.235" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19898391" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -833,18 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/localweather/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="90" column="19" lean-forward="false" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="19" />
-          <folding>
-            <marker date="1515259721592" expanded="true" signature="2348:2353" ph="°" />
-            <marker date="1515259721592" expanded="true" signature="2571:2576" ph="°" />
-            <marker date="1515259721592" expanded="true" signature="2705:2710" ph="°" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/localweather/weather.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -858,6 +844,18 @@
         <state relative-caret-position="97">
           <caret line="97" column="62" lean-forward="false" selection-start-line="97" selection-start-column="62" selection-end-line="97" selection-end-column="62" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/localweather/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+          <folding>
+            <marker date="1515748080331" expanded="true" signature="2365:2370" ph="°" />
+            <marker date="1515748080331" expanded="true" signature="2588:2593" ph="°" />
+            <marker date="1515748080331" expanded="true" signature="2722:2727" ph="°" />
+          </folding>
         </state>
       </provider>
     </entry>
