@@ -23,19 +23,33 @@ a{
     font-family: 'Roboto';
 }
 
+.background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    background: darkgrey;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: .4;
+}
+
 .header-footer{
     position: fixed;
     height:6vh;
     width: 100vw;
     padding-top: 2vh;
     margin:0;
-    background: darkgrey;
-    opacity: 0.7;
+    z-index: 5;
 }
 
 #header{
     top: 0;
 }
+
 #footer{
     bottom: 0;
     color: orangered;
@@ -46,12 +60,20 @@ a{
     width: 25px;
 }
 
+#main-contents{
+    padding-top: 30px;
+    background: whitesmoke;
+    opacity: 1;
+    height: 88vh;
+    overflow-y: auto;
+}
+
 .middle{
     position: fixed;
     top: 6vh;
-    min-height: 88vh;
     width: 100vw;
     margin:0;
+    z-index: 5;
 }
 
 .further-style{
@@ -61,20 +83,14 @@ a{
     padding: 15px;
 }
 
-#main-contents{
-    padding-top: 30px;
-    background: whitesmoke;
-    opacity: 1;
-}
-
-#top-menu{
-
+.bordered{
+    border: 1px solid;
+    color: white;
 }
 
 #left-menu{
-    background: darkgrey;
+
     padding-top: 2vh;
-    opacity: 0.7;
 }
 
 #left-menu i{
@@ -135,4 +151,71 @@ a{
     position: absolute; /* Position the badge within the relatively positioned button */
     top: 0;
     right: 0;
+}
+
+/*custom scroll bar*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: orangered;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*********** iPhones and SmartPhones ******************/
+@media only screen and (max-width: 740px) {
+
+}
+
+@media only screen and (max-width: 740px) and (orientation: landscape) {
+
+}
+
+/***** Device = Tablets, iPads (portrait)*****/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #header{
+        font-size: small;
+    }
+    #left-menu div{
+        margin-left: -1vw;
+    }
+    #left-menu span{
+        font-size: small;
+    }
+    #notifications .button {
+        font-size: 20px;
+    }
+    #main-contents{
+        padding-bottom: 5vh;
+    }
+    #left-menu div{
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/***** iPad Pro (1024 x 1366) *****/
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+
+}
+
+@media only screen and (min-width: 1025px)  and (max-width: 1400px) and (orientation: landscape){
+
 }
