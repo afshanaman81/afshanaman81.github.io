@@ -4,7 +4,8 @@ body{
     font-size: 3vh;
     background-color: darkgray;
     height: 100%;
-    background-image: url("background.jpg");
+    background: url("background.jpg") no-repeat center fixed;
+    background-size: cover;
 }
 
 .outer-grid{
