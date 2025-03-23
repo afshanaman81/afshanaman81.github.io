@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="font-src 'self' data:; img-src 'self' data:; default-src 'self' http://121.0.0:3000/">
-
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        style-src-elem 'self' https://fonts.googleapis.com;
+        font-src https://fonts.gstatic.com;
+    ">
     <title>Afshan Martin Portfolio</title>
 
     <link rel="icon" href="/afshanaman81.github.io/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Gowun+Dodum"
