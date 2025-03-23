@@ -9,6 +9,8 @@
   },
   "scripts": {
     "fresh:start": "rm -rf node_modules package-lock.json && npm i",
+    "predeploy": "rm -rf dist && npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "vite --port 4000",
     "build": "vite build",
     "preview": "vite preview",
@@ -39,6 +41,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.3",
+    "gh-pages": "^6.3.0",
     "@tailwindcss/forms": "^0.5.7",
     "@types/node": "^22.1.0",
     "@typescript-eslint/eslint-plugin": "^8.0.1",

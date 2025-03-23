@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="font-src 'self' data:; img-src 'self' data:; default-src 'self' http://121.0.0:3000/">
-
+    <meta http-equiv="Content-Security-Policy"
+    content="
+      default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
+      style-src   'self' https://fonts.googleapis.com;
+      font-src    'self' data: https://fonts.gstatic.com;
+      img-src     'self' data: content:;
+      media-src   *;
+            "
+  />
     <title>Afshan Martin Portfolio</title>
 
     <link rel="icon" href="/afshanaman81.github.io/favicon.png" />
